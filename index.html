@@ -6,21 +6,21 @@
   </head>
   <body>
  	<header class="header">
- 		<h1 class="header__title">DEVICE</h1>
+ 		<a  class="header__link"><h1 class="header__title">DEVICE</h1></a>
  		<nav class="main-menu">
- 			<div class="menu-personal">
+ 			<div class="menu-container">
  				<span>Поиск по сайту</span>
- 				<ul class="menu-login__list">
- 					<li class="menu-personal__item"><a>Войти</a></li>
- 					<li class="menu-personal__item"><a>Сравнить</a></li>
- 					<li class="menu-personal__item"><a>Корзина</a></li>
+ 				<ul class="main-menu__list user-menu">
+ 					<li class="user-menu__item"><a class="user-menu__link" href="#">Войти</a></li>
+ 					<li class="user-menu__item"><a class="user-menu__link" href="#">Сравнить</a></li>
+ 					<li class="user-menu__item"><a class="user-menu__link" href="#">Корзина</a></li>
  				</ul>
  			</div>
- 			<ul class="menu-sections__list">
- 				<li class="menu-sections__item"><a>Каталог товаров</a></li>
- 				<li class="menu-sections__item"><a>Доставка</a></li>
- 				<li class="menu-sections__item"><a>Гарантия</a></li>
- 				<li class="menu-sections__item"><a>Контакты</a></li>
+ 			<ul class="main-menu__list site-menu">
+ 				<li class="site-menu__item"><a class="site-menu__link" href="#">Каталог товаров</a></li>
+ 				<li class="site-menu__item"><a class="site-menu__link" href="#">Доставка</a></li>
+ 				<li class="site-menu__item"><a class="site-menu__link" href="#">Гарантия</a></li>
+ 				<li class="site-menu__item"><a class="site-menu__link" href="#">Контакты</a></li>
  			</ul>
  		</nav>
  	</header>
@@ -29,48 +29,50 @@
  		<section><!--Здесь будут категории меню--></section>
  		<section><!--Здесь будет блок преимуществ--></section>
  		<section><!--Здесь будет блок 'labels'--></section>
+ 		<div>
  			<section class="description">
  				<h2 class="description__title">О нас</h2>
  				<p class="description__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
  				<p class="description__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
- 				<ul class="description__list">
- 					<li class="description__item">Деловые Линии</li>
- 					<li class="description__item">Автострейдинг</li>
- 					<li class="description__item">ЖелДорЭкспедиция</li>
+ 				<ul class="description__list delivery-list">
+ 					<li class="delivery-list__item">Деловые Линии</li>
+ 					<li class="delivery-list__item">Автострейдинг</li>
+ 					<li class="delivery-list__item">ЖелДорЭкспедиция</li>
  				</ul>
- 				<a class="btn description__btn">Подробнее о нас</a>
+ 				<a class="btn description__btn" href="#">Подробнее о нас</a>
  			</section>
  			<section class="contacts">
  				<h2 class="contacts__title">Контакты</h2>
  				<p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
- 				<img class="contacts__map" src="map.jpg" width="285px" height="165px" alt="Карта офиса по адресу улица Строителей 15">
- 				<a class="btn contacts-btn">Напишите нам</a>
+ 				<a class="contacts__link" href="#"><img class="contacts__map" src="map.jpg" width="285" height="165" alt="Наш офи находится по адресу улица Строителей 15"></a>
+ 				<a class="btn contacts-btn" href="#">Напишите нам</a>
  			</section>
+ 		</div>
  	</main>
  	<footer class="footer">
- 		<div class="footer-description">
- 			<b>DEVICE</b>
- 			<p>г. Москва, ул. Строителей, 15</p>
- 		</div>
- 		<div class="footer-links">
- 			<ul class="footer-sections__list">
- 				<li class="footer-sections__item"><a>Доставка</a></li>
- 				<li class="footer-sections__item"><a>Гарантия</a></li>
- 				<li class="footer-sections__item"><a>Контакты</a></li>
- 			</ul>
- 			<ul class="footer-social__list">
- 				<li class="footer-social__item"><a>Фейсбук</a></li>
- 				<li class="footer-social__item"><a>Инстаграм</a></li>
- 				<li class="footer-social__item"><a>Твиттер</a></li>
+ 		<div class="footer-section">
+ 			<a class="footer-section__link"><b>DEVICE</b></a>
+ 			<ul class="footer-sectionr__list user-menu">
+ 				<li class="user-menu__item"><a class="user-menu__link" href="#">Войти</a></li>
+ 				<li class="user-menu__item"><a class="user-menu__link" href="#">Сравнить</a></li>
+ 				<li class="user-menu__item"><a class="user-menu__link" href="#">Корзина</a></li>
  			</ul>
  		</div>
- 		<div class="footer-menu">
- 			<ul class="footer-menu__list">
- 				<li class="footer-menu__item"><a>Войти</a></li>
- 				<li class="footer-menu__item"><a>Сравнить</a></li>
- 				<li class="footer-menu__item"><a>Корзина</a></li>
+ 		<div class="footer-section">
+ 			<p class="footer-section__text">г. Москва, ул. Строителей, 15</p>
+ 			<ul class="footer-section__list site-menu">
+ 				<li class="site-menu__item"><a class="site-menu__link" href="#">Доставка</a></li>
+ 				<li class="site-menu__item"><a class="site-menu__link" href="#">Гарантия</a></li>
+ 				<li class="site-menu__item"><a class="site-menu__link" href="#">Контакты</a></li>
  			</ul>
- 			<p>Тел.: +7 (495) 495-95-95</p>
+ 			<a class="footer-section__link footer-telephone" href="tel:+74954959595""><p>Тел.: +7 (495) 495-95-95</p></a>
+ 		</div>
+ 		<div class="footer-section">
+ 			<ul class="footer-section__list social">
+ 				<li class="social__item"><a class="social__link" href="#">Фейсбук</a></li>
+ 				<li class="social__item"><a class="social__link" href="#">Инстаграм</a></li>
+ 				<li class="social__item"><a class="social__link" href="#">Твиттер</a></li>
+ 			</ul>
  			<span><!--Здесь будет лого HTML Academy--></span>
  		</div>
  	</footer>
