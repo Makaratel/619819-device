@@ -26,19 +26,88 @@
  	</header>
  	<main>
  		<h1 class="visually-hidden">DEVICE – магазин умных гаджетов</h1>
- 		<section><!--Здесь будет основной слайдер--></section>
- 		<section><!--Здесь будут категории меню--></section>
- 		<section><!--Здесь будет блок преимуществ--></section>
- 		<section><!--Здесь будет блок 'labels'--></section>
+ 		<section class="promo">
+ 			<h2 class="visually-hidden">Промо</h2>
+ 			<section class="promo-picture">
+ 				<h3 class="visually-hidden">Промо-изображение</h3>
+ 				<img class="promo-picture__img" src="promo_1.jpg" width="500" height="500" alt="Самайя длинная селфи палка">
+ 			</section>
+ 			<section class="promo-description">
+ 				<h3 class="visually-hidden">Описание промо-товара</h3>
+ 				<b class="promo-description__lead">Делай селфи, как Бен Стиллер!</b>
+ 				<p class="promo-description__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+ 				<div class="promo-description__section promo-navigation">
+ 					<a class="btn promo-navigation__link" href="#">Подробнее</a>
+ 					<input class="promo-navigation__radio" type="radio" checked="">
+ 					<input class="promo-navigation__radio" type="radio">
+ 					<input class="promo-navigation__radio" type="radio">
+ 				</div>
+ 				<dl class="promo-description__definition definition-list">
+ 					<dt class="definition-list__term">Длина палки</dt>
+ 					<dd class="definition-list__determination">8,5 м</dd>
+ 					<dt class="definition-list__term">Вес палки</dt>
+ 					<dd class="definition-list__determination">5 кг</dd>
+ 					<dt class="definition-list__term">Материал палки</dt>
+ 					<dd class="definition-list__determination">Карбон</dd>
+ 				</dl>
+ 			</section>
+ 		</section>
+ 		<section class="categories">
+ 			<h2 class="visually-hidden">Категории товаров</h2>
+ 			<ul class="categories__list">
+ 				<li class="categories__item categories-list">
+ 					<div class="categories-list__picture picture-virtual"><!-- Для срайта --></div>
+ 					<h3 class="categories-list__title">Виртуальная реальность</h3>
+ 				</li>
+ 				<li class="categories__item categories-list">
+ 					<div class="categories-list__picture picture-monopods"><!-- Для срайта --></div>
+ 					<h3 class="categories-list__title">Моноподы для селфи</h3>
+ 				</li>
+ 				<li class="categories__item categories-list">
+ 					<div class="categories-list__picture picture-camers"><!-- Для срайта --></div>
+ 					<h3 class="categories-list__title">Экшн-камеры</h3>
+ 				</li>
+ 				<li class="categories__item categories-list">
+ 					<div class="categories-list__picture picture-bracers"><!-- Для срайта --></div>
+ 					<h3 class="categories-list__title">Фитнес-браслеты</h3>
+ 				</li>
+ 				<li class="categories__item categories-list">
+ 					<div class="categories-list__picture picture-watches"><!-- Для срайта --></div>
+ 					<h3 class="categories-list__title">Умные часы</h3>
+ 				</li>
+ 				<li class="categories__item categories-list">
+ 					<div class="categories-list__picture picture-quadcopter"><!-- Для срайта --></div>
+ 					<h3 class="categories-list__title">Квадрокоптеры</h3>
+ 				</li>
+ 			</ul>
+ 		</section>
+ 		<section class="features">
+ 			<h2 class="visually-hidden">Преимущества</h2>
+ 			<ul class="features__list">
+ 				<li class="features__item"><a class="features__link" href="#">Доставка</a></li>
+ 				<li class="features__item"><a class="features__link" href="#">Гарантия</a></li>
+ 				<li class="features__item"><a class="features__link" href="#">Кредит</a></li>
+ 			</ul>
+ 			<!-- Здесь будет слайдер преимуществ -->
+ 		</section>
+ 		<section class="brends">
+ 			<h2 class="visually-hidden">Бренды</h2>
+ 			<ul class="brends__list">
+ 				<li class="brends__item"><img class="brends__picture" src="dji.jpg" width="150" height="150" alt="dji"></li>
+ 				<li class="brends__item"><img class="brends__picture" src="sp_gadgets.jpg" width="150" height="150" alt="SP GADGETS"></li>
+ 				<li class="brends__item"><img class="brends__picture" src="go_pro" width="150" height="150" alt="Go Pro"></li>
+ 				<li class="brends__item"><img class="brends__picture" src="vive.jpg" width="150" height="150" alt="VIVE"></li>
+ 			</ul>
+ 		</section>
  		<div>
  			<section class="description">
  				<h2 class="description__title">О нас</h2>
  				<p class="description__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
  				<p class="description__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
- 				<ul class="description__list delivery-list">
- 					<li class="delivery-list__item">Деловые Линии</li>
- 					<li class="delivery-list__item">Автострейдинг</li>
- 					<li class="delivery-list__item">ЖелДорЭкспедиция</li>
+ 				<ul class="description__list description-delivery">
+ 					<li class="description-delivery__item">Деловые Линии</li>
+ 					<li class="description-delivery__item">Автострейдинг</li>
+ 					<li class="description-delivery__item">ЖелДорЭкспедиция</li>
  				</ul>
  				<a class="btn description__btn" href="#">Подробнее о нас</a>
  			</section>

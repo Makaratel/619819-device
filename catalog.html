@@ -28,12 +28,29 @@
  	<main class="main">
  		<h1 class="main__title">Моноподы для селфи</h1>
  		<ul class="main__list breadcrumbs">
- 			<li class="breadcrumbs__item"><a class="breadcrumbs__link">Главная</a></li>
- 			<li class="breadcrumbs__item"><a class="breadcrumbs__link">Каталог товаров</a></li>
+ 			<li class="breadcrumbs__item"><a class="breadcrumbs__link"  href="index.html">Главная</a></li>
+ 			<li class="breadcrumbs__item"><a class="breadcrumbs__link"  href="#">Каталог товаров</a></li>
  			<li class="breadcrumbs__item">Моноподы для селфи</li>
  		</ul>
+ 		<div class="main-section">
+ 			<section class="main-section__filters">
+ 				<h3 class="main-section__title">Фильтр:</h3>
+ 			</section>
+ 			<section class="main-section__sort">
+ 				<h3 class="main-section__title">Сортировка:</h3>
+ 				<ul class="main-section__list sort-list">
+ 					<li class="sort-list__item"><a class="sort-list__link"  href="#">По цене</a></li>
+ 					<li class="sort-list__item"><a class="sort-list__link"  href="#">По типу</a></li>
+ 					<li class="sort-list__item"><a class="sort-list__link"  href="#">По популярности</a></li>
+ 				</ul>
+ 			</section>
+ 		</div>
  		<section class="filters">
  			<h2 class="filters__title visually-hidden">Фильтры</h2>
+ 			<section class="filters__filter filter-price">
+ 				<h3 class="filter-price__title">Стоимость</h3>
+ 				<input type="range" min="0" max="5000">
+ 			</section>
  			<section class="filters__filter filter-color">
  				<h3 class="filter-color__title">Цвет</h3>
  				<ul class="filter-color__list color">
@@ -75,7 +92,7 @@
  			<input class="btn filters__btn" type="submit" value="Показать">
  		</section>
  		<section class="goods">
- 			<h2 class="goods__title">Товары</h2>
+ 			<h2 class="goods__title visually-hidden">Товары</h2>
  			<ul class="goods__list goods-list">
  				<li class="goods-list__item goods-item">
  					<img class="goods-item__picture" src="amateur-selfi.jpg" width="250" height="250" alt="Любительская селфи-палка">
@@ -105,6 +122,16 @@
  						<span class="goods-item__price">4 900 руб.</span>
  					</p>
  				</li>
+ 			</ul>
+ 		</section>
+ 		<section class="navigation-catalog">
+ 			<h2 class="visually-hidden">Навигация по каталогу</h2>
+ 			<ul class="navigation-catalog__list">
+ 				<li class="navigation-catalog__item"><a class="navigation-catalog__link"  href="#">Назад</a></li>
+ 				<li class="navigation-catalog__item"><a class="navigation-catalog__link"  href="#">1</a></li>
+ 				<li class="navigation-catalog__item"><a class="navigation-catalog__link"  href="#">2</a></li>
+ 				<li class="navigation-catalog__item"><a class="navigation-catalog__link"  href="#">3</a></li>
+ 				<li class="navigation-catalog__item"><a class="navigation-catalog__link"  href="#">Вперед</a></li>
  			</ul>
  		</section>
  	</main>
