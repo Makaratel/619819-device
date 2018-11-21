@@ -28,28 +28,73 @@
  		<h1 class="visually-hidden">DEVICE – магазин умных гаджетов</h1>
  		<section class="recommended-goods">
  			<h2 class="visually-hidden">Рекомендуемые товары</h2>
- 			<div class="recommended-goods__img-wrapper">
- 				<img class="recommended-goods__img" src="promo_1.jpg" width="500" height="500" alt="Самая длинная селфи палка">
- 			</div>
- 			<div class="recommended-goods__description description-detail">
- 				<b class="description-detail__lead">Делай селфи, как Бен Стиллер!</b>
- 				<p class="description-detail__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
- 				<div class="description-detail__section description-navigation">
- 					<a class="btn description-navigation__link" href="#">Подробнее</a>
- 					<input class="description-navigation__radio" type="radio" checked>
- 					<input class="description-navigation__radio" type="radio">
- 					<input class="description-navigation__radio" type="radio">
+ 			<input class="recommended-goods__radio" type="radio" id="radio-1" checked>
+ 			<input class="recommended-goods__radio" type="radio" id="radio-2">
+ 			<input class="recommended-goods__radio" type="radio" id="radio-3">
+ 			<ul class="recommended-goods__list controls">
+ 				<li class="controls__item">
+ 					<label class="controls__label" for="radio-1"></label>
+ 				</li>
+ 				<li class="controls__item">
+ 					<label class="controls__label" for="radio-2"></label>
+ 				</li>
+ 				<li class="controls__item">
+ 					<label class="controls__label" for="radio-3"></label>
+ 				</li>
+ 			</ul>
+
+ 			<div class="recommended-goods__wrapper goods-slider-1">
+ 				<div class="recommended-goods__img-wrapper">
+ 					<img class="recommended-goods__img" src="img/slider-1.png" width="500" height="500" alt="Самая длинная селфи палка">
  				</div>
- 				<dl class="description-detail__definition definition-list">
- 					<dt class="definition-list__term">Длина палки</dt>
- 					<dd class="definition-list__determination">8,5 м</dd>
- 					<dt class="definition-list__term">Вес палки</dt>
- 					<dd class="definition-list__determination">5 кг</dd>
- 					<dt class="definition-list__term">Материал палки</dt>
- 					<dd class="definition-list__determination">Карбон</dd>
- 				</dl>
+ 				<div class="recommended-goods__description description-detail">
+ 					<b class="description-detail__lead">Делай селфи, как Бен Стиллер!</b>
+ 					<p class="description-detail__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+ 					<a class="btn description-detail__link" href="#">Подробнее</a>
+ 					<dl class="description-detail__definition definition-list">
+ 						<dt class="definition-list__term">Длина палки</dt>
+ 						<dd class="definition-list__determination">8,5 м</dd>
+ 						<dt class="definition-list__term">Вес палки</dt>
+ 						<dd class="definition-list__determination">5 кг</dd>
+ 						<dt class="definition-list__term">Материал палки</dt>
+ 						<dd class="definition-list__determination">Карбон</dd>
+ 					</dl>
+ 				</div>
+ 			</div>
+
+			<div class="recommended-goods__wrapper goods-slider-2">
+ 				<div class="recommended-goods__img-wrapper">
+ 					<img class="recommended-goods__img" src="img/slider-2.png" width="500" height="500" alt="Фитнес-браслет">
+ 				</div>
+ 				<div class="recommended-goods__description description-detail">
+ 					<b class="description-detail__lead">Худеем правильно</b>
+ 					<p class="description-detail__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не проускать занятия и соблюдать диету</p>
+ 					<a class="btn description-detail__link" href="#">Подробнее</a>
+ 					<dl class="description-detail__definition definition-list">
+ 						<dt class="definition-list__term">Без подзарядки</dt>
+ 						<dd class="definition-list__determination">48 часов</dd>
+ 					</dl>
+ 				</div>
+ 			</div>
+
+ 			<div class="recommended-goods__wrapper goods-slider-3">
+ 				<div class="recommended-goods__img-wrapper">
+ 					<img class="recommended-goods__img" src="img/slider-3.png" width="500" height="500" alt="Квадрокоптер">
+ 				</div>
+ 				<div class="recommended-goods__description description-detail">
+ 					<b class="description-detail__lead">Порхает как бабочка, жалит как пчела!</b>
+ 					<p class="description-detail__text">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+ 					<a class="btn description-detail__link" href="#">Подробнее</a>
+ 					<dl class="description-detail__definition definition-list">
+ 						<dt class="definition-list__term">Дальность полета</dt>
+ 						<dd class="definition-list__determination">800 м</dd>
+ 						<dt class="definition-list__term">Радиус поражения</dt>
+ 						<dd class="definition-list__determination">50 м</dd>
+ 					</dl>
+ 				</div>
  			</div>
  		</section>
+
  		<section class="categories">
  			<h2 class="visually-hidden">Категории товаров</h2>
  			<ul class="categories__list">
@@ -91,11 +136,13 @@
  				</li>
  			</ul>
  		</section>
+
  		<section class="features">
  			<h2 class="visually-hidden">Преимущества</h2>
  			<input class="visually-hidden" type="button" name="delivery" id="delivery">
  			<input class="visually-hidden" type="button" name="garanty" id="garanty">
  			<input class="visually-hidden" type="button" name="credit" id="credit">
+
  			<ul class="features__list">
  				<li class="features__item">
  					<label class="features__label" for="delivery"></label>
@@ -107,6 +154,7 @@
  					<label class="features__label" for="credit"></label>
  				</li>
  			</ul>
+
  			<ul class="features__list advantages">
  				<li class="advantages__item">
  					<h3 class="advantages__title">Доставка</h3>
@@ -122,23 +170,25 @@
  				</li>
  			</ul>
  		</section>
+
  		<section class="brands">
  			<h2 class="visually-hidden">Бренды</h2>
  			<ul class="brands__list">
  				<li class="brands__item">
- 					<img class="brands__picture" src="dji.jpg" width="150" height="150" alt="dji">
+ 					<img class="brands__picture" src="img/logo-1.png" width="150" height="150" alt="dji">
  				</li>
  				<li class="brands__item">
- 					<img class="brands__picture" src="sp_gadgets.jpg" width="150" height="150" alt="SP GADGETS">
+ 					<img class="brands__picture" src="img/logo-2.png" width="150" height="150" alt="SP GADGETS">
  				</li>
  				<li class="brands__item">
- 					<img class="brands__picture" src="go_pro" width="150" height="150" alt="Go Pro">
+ 					<img class="brands__picture" src="img/logo-3.png" width="150" height="150" alt="Go Pro">
  				</li>
  				<li class="brands__item">
- 					<img class="brands__picture" src="vive.jpg" width="150" height="150" alt="VIVE">
+ 					<img class="brands__picture" src="img/logo-4.png" width="150" height="150" alt="VIVE">
  				</li>
  			</ul>
  		</section>
+
  		<div>
  			<section class="description">
  				<h2 class="description__title">О нас</h2>
@@ -151,6 +201,7 @@
  				</ul>
  				<a class="btn description__btn" href="#">Подробнее о нас</a>
  			</section>
+
  			<section class="contacts">
  				<h2 class="contacts__title">Контакты</h2>
  				<p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -159,6 +210,7 @@
  			</section>
  		</div>
  	</main>
+
  	<footer class="footer">
  		<div class="footer__section">
  			<a class="footer__logo">DEVICE</a>
