@@ -22,15 +22,88 @@
  				<li class="site-menu__item"><a class="site-menu__link" href="#">Гарантия</a></li>
  				<li class="site-menu__item"><a class="site-menu__link" href="#">Контакты</a></li>
  			</ul>
+ 			<div class="main-menu__catalog visually-hidden">
+ 				<ul class="main-menu__list catalog-menu">
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Виртуальная реальность</a></li>
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Моноподы для селфи</a></li>
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Экшн-камеры</a></li>
+ 				</ul>
+ 				<ul class="main-menu__list catalog-menu">
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Фитнес-браслеты</a></li>
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Умные часы</a></li>
+ 				</ul>
+ 				<ul class="main-menu__list catalog-menu">
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Квадрокоптеры</a></li>
+ 				</ul>
+ 			</div>
  		</nav>
  	</header>
  	<main>
  		<h1 class="visually-hidden">DEVICE – магазин умных гаджетов</h1>
  		<section class="recommended-goods">
  			<h2 class="visually-hidden">Рекомендуемые товары</h2>
- 			<input class="recommended-goods__radio" type="radio" id="radio-1" checked>
- 			<input class="recommended-goods__radio" type="radio" id="radio-2">
- 			<input class="recommended-goods__radio" type="radio" id="radio-3">
+ 			<input class="visually-hidden recommended-goods__slider-input recommended-goods__slider-input--1" type="radio" name="good" id="radio-1" checked>
+ 			<input class="visually-hidden recommended-goods__slider-input recommended-goods__slider-input--2" type="radio" name="good" id="radio-2">
+ 			<input class="visually-hidden recommended-goods__slider-input recommended-goods__slider-input--3" type="radio" name="good" id="radio-3">
+ 			<ul class="recommended-goods__list">
+ 				<li class="recommended-goods__item item-goods">
+ 					<div class="item-goods--slider-1">
+ 						<div class="item-goods__img-wrapper">
+ 							<img class="item-goods__img" src="img/slider-1.png" width="500" height="500" alt="Самая длинная селфи палка">
+ 						</div>
+ 						<div class="item-goods__description description-detail">
+ 							<b class="description-detail__lead">Делай селфи, как Бен Стиллер!</b>
+ 							<p class="description-detail__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+ 							<a class="btn description-detail__link" href="#">Подробнее</a>
+ 							<dl class="description-detail__definition definition-list">
+ 								<dt class="definition-list__term">Длина палки</dt>
+ 								<dd class="definition-list__determination">8,5 м</dd>
+ 								<dt class="definition-list__term">Вес палки</dt>
+ 								<dd class="definition-list__determination">5 кг</dd>
+ 								<dt class="definition-list__term">Материал палки</dt>
+ 								<dd class="definition-list__determination">Карбон</dd>
+ 							</dl>
+ 						</div>
+ 					</div>
+ 				</li>
+
+ 				<li class="recommended-goods__item item-goods">
+ 					<div class="item-goods--slider-2">
+ 						<div class="item-goods__img-wrapper">
+ 							<img class="item-goods__img" src="img/slider-2.png" width="500" height="500" alt="Фитнес-браслет">
+ 						</div>
+ 						<div class="item-goods__description description-detail">
+ 							<b class="description-detail__lead">Худеем правильно</b>
+ 							<p class="description-detail__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не проускать занятия и соблюдать диету</p>
+ 							<a class="btn description-detail__link" href="#">Подробнее</a>
+ 							<dl class="description-detail__definition definition-list">
+ 								<dt class="definition-list__term">Без подзарядки</dt>
+ 								<dd class="definition-list__determination">48 часов</dd>
+ 							</dl>
+ 						</div>
+ 					</div>
+ 				</li>
+
+ 				<li class="recommended-goods__item item-goods">
+ 					<div class="item-goods--slider-3">
+ 						<div class="item-goods__img-wrapper">
+ 							<img class="item-goods__img" src="img/slider-3.png" width="500" height="500" alt="Квадрокоптер">
+ 						</div>
+ 						<div class="item-goods__description description-detail">
+ 							<b class="description-detail__lead">Порхает как бабочка, жалит как пчела!</b>
+ 							<p class="description-detail__text">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+ 							<a class="btn description-detail__link" href="#">Подробнее</a>
+ 							<dl class="description-detail__definition definition-list">
+ 								<dt class="definition-list__term">Дальность полета</dt>
+ 								<dd class="definition-list__determination">800 м</dd>
+ 								<dt class="definition-list__term">Радиус поражения</dt>
+ 								<dd class="definition-list__determination">50 м</dd>
+ 							</dl>
+ 						</div>
+ 					</div>
+ 				</li>
+ 			</ul>
+
  			<ul class="recommended-goods__list controls">
  				<li class="controls__item">
  					<label class="controls__label" for="radio-1"></label>
@@ -42,57 +115,6 @@
  					<label class="controls__label" for="radio-3"></label>
  				</li>
  			</ul>
-
- 			<div class="recommended-goods__wrapper goods-slider-1">
- 				<div class="recommended-goods__img-wrapper">
- 					<img class="recommended-goods__img" src="img/slider-1.png" width="500" height="500" alt="Самая длинная селфи палка">
- 				</div>
- 				<div class="recommended-goods__description description-detail">
- 					<b class="description-detail__lead">Делай селфи, как Бен Стиллер!</b>
- 					<p class="description-detail__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
- 					<a class="btn description-detail__link" href="#">Подробнее</a>
- 					<dl class="description-detail__definition definition-list">
- 						<dt class="definition-list__term">Длина палки</dt>
- 						<dd class="definition-list__determination">8,5 м</dd>
- 						<dt class="definition-list__term">Вес палки</dt>
- 						<dd class="definition-list__determination">5 кг</dd>
- 						<dt class="definition-list__term">Материал палки</dt>
- 						<dd class="definition-list__determination">Карбон</dd>
- 					</dl>
- 				</div>
- 			</div>
-
-			<div class="recommended-goods__wrapper goods-slider-2">
- 				<div class="recommended-goods__img-wrapper">
- 					<img class="recommended-goods__img" src="img/slider-2.png" width="500" height="500" alt="Фитнес-браслет">
- 				</div>
- 				<div class="recommended-goods__description description-detail">
- 					<b class="description-detail__lead">Худеем правильно</b>
- 					<p class="description-detail__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не проускать занятия и соблюдать диету</p>
- 					<a class="btn description-detail__link" href="#">Подробнее</a>
- 					<dl class="description-detail__definition definition-list">
- 						<dt class="definition-list__term">Без подзарядки</dt>
- 						<dd class="definition-list__determination">48 часов</dd>
- 					</dl>
- 				</div>
- 			</div>
-
- 			<div class="recommended-goods__wrapper goods-slider-3">
- 				<div class="recommended-goods__img-wrapper">
- 					<img class="recommended-goods__img" src="img/slider-3.png" width="500" height="500" alt="Квадрокоптер">
- 				</div>
- 				<div class="recommended-goods__description description-detail">
- 					<b class="description-detail__lead">Порхает как бабочка, жалит как пчела!</b>
- 					<p class="description-detail__text">Это обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
- 					<a class="btn description-detail__link" href="#">Подробнее</a>
- 					<dl class="description-detail__definition definition-list">
- 						<dt class="definition-list__term">Дальность полета</dt>
- 						<dd class="definition-list__determination">800 м</dd>
- 						<dt class="definition-list__term">Радиус поражения</dt>
- 						<dd class="definition-list__determination">50 м</dd>
- 					</dl>
- 				</div>
- 			</div>
  		</section>
 
  		<section class="categories">
@@ -139,22 +161,9 @@
 
  		<section class="features">
  			<h2 class="visually-hidden">Преимущества</h2>
- 			<input class="visually-hidden" type="button" name="delivery" id="delivery">
- 			<input class="visually-hidden" type="button" name="garanty" id="garanty">
- 			<input class="visually-hidden" type="button" name="credit" id="credit">
-
- 			<ul class="features__list">
- 				<li class="features__item">
- 					<label class="features__label" for="delivery"></label>
- 				</li>
- 				<li class="features__item">
- 					<label class="features__label" for="garanty"></label>
- 				</li>
- 				<li class="features__item">
- 					<label class="features__label" for="credit"></label>
- 				</li>
- 			</ul>
-
+ 			<input class="visually-hidden" type="radio" name="feature" id="delivery">
+ 			<input class="visually-hidden" type="radio" name="feature" id="garanty">
+ 			<input class="visually-hidden" type="radio" name="feature" id="credit">
  			<ul class="features__list advantages">
  				<li class="advantages__item">
  					<h3 class="advantages__title">Доставка</h3>
@@ -167,6 +176,18 @@
  				<li class="advantages__item">
  					<h3 class="advantages__title">Кредит</h3>
  					<p class="advantages__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+ 				</li>
+ 			</ul>
+
+ 			<ul class="features__list">
+ 				<li class="features__item">
+ 					<label class="features__label" for="delivery"></label>
+ 				</li>
+ 				<li class="features__item">
+ 					<label class="features__label" for="garanty"></label>
+ 				</li>
+ 				<li class="features__item">
+ 					<label class="features__label" for="credit"></label>
  				</li>
  			</ul>
  		</section>

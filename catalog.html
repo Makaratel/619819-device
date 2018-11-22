@@ -23,6 +23,20 @@
  				<li class="site-menu__item"><a class="site-menu__link" href="#">Гарантия</a></li>
  				<li class="site-menu__item"><a class="site-menu__link" href="#">Контакты</a></li>
  			</ul>
+ 			<div class="main-menu__catalog visually-hidden">
+ 				<ul class="main-menu__list catalog-menu">
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Виртуальная реальность</a></li>
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Моноподы для селфи</a></li>
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Экшн-камеры</a></li>
+ 				</ul>
+ 				<ul class="main-menu__list catalog-menu">
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Фитнес-браслеты</a></li>
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Умные часы</a></li>
+ 				</ul>
+ 				<ul class="main-menu__list catalog-menu">
+ 					<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Квадрокоптеры</a></li>
+ 				</ul>
+ 			</div>
  		</nav>
  	</header>
  	<main class="main">
@@ -33,133 +47,137 @@
  			<li class="breadcrumbs__item">Моноподы для селфи</li>
  		</ul>
 
- 		<section class="filters">
- 			<h2 class="filters__title">Фильтр</h2>
- 			<section class="filters__filter filter-price">
- 				<h3 class="filter-price__title">Стоимость</h3>
- 				<input type="range" min="0" max="5000">
- 			</section>
- 			<section class="filters__filter filter-color">
- 				<h3 class="filter-color__title">Цвет</h3>
- 				<ul class="filter-color__list color">
- 					<li class="color__item color-item">
- 						<input class="color-item__box" type="checkbox" name="black" id="black">
- 						<label class="color-item__title" for="black">Черный</label>
- 					</li>
- 					<li class="color__item color-item">
- 						<input class="color-item__box" type="checkbox" name="white" id="white">
- 						<label class="color-item__title" for="white">Белый</label>
- 					</li>
- 					<li class="color__item color-item">
- 						<input class="color-item__box" type="checkbox" name="blue" id="blue">
- 						<label class="color-item__title" for="blue">Синий</label>
- 					</li>
- 					<li class="color__item color-item">
- 						<input class="color-item__box" type="checkbox" name="red" id="red">
- 						<label class="color-item__title" for="red">Красный</label>
- 					</li>
- 					<li class="color__item color-item">
- 						<input class="color-item__box" type="checkbox" name="pink" id="pink">
- 						<label class="color-item__title" for="pink">Розовый</label>
- 					</li>
- 				</ul>
- 			</section>
- 			<section class="filters__filter filter-bluetooth">
- 				<h3 class="filter-bluetooth__title">Bluetooth</h3>
- 				<ul class="filter-bluetooth__list bluetooth-having">
- 					<li class="bluetooth-having__item bluetooth-item">
- 						<input class="bluetooth-item__box" type="radio" name="bluethooth-yes" id="bluethooth-yes">
- 						<label class="bluetooth-item__title" for="bluethooth-yes">Черный</label>
- 					</li>
- 					<li class="bluetooth-having__item bluetooth-item">
- 						<input class="bluetooth-item__box" type="radio" name="bluethooth-no" id="bluethooth-no">
- 						<label class="bluetooth-item__title" for="bluetooth-no">Белый</label>
- 					</li>
- 				</ul>
- 			</section>
- 			<input class="btn filters__btn" type="submit" value="Показать">
- 		</section>
-
- 		<div class="main__section">
- 			<section class="main__section-sort sort">
- 				<h2 class="sort__title">Сортировка:</h2>
- 				<ul class="sort__list sort-list">
- 					<li class="sort-list__item"><a class="sort-list__link"  href="#">По цене</a></li>
- 					<li class="sort-list__item"><a class="sort-list__link"  href="#">По типу</a></li>
- 					<li class="sort-list__item"><a class="sort-list__link"  href="#">По популярности</a></li>
- 				</ul>
- 				<ul class="sort__list sort-destination">
- 					<li class="sort-destination__item destination-up"></li>
- 					<li class="sort-destination__item destination-down"></li>
- 				</ul>
+ 		<ul>
+ 			<li></li>
+ 		<div class="main__section-catalog">
+ 			<section class="filters">
+ 				<h2 class="filters__title">Фильтр</h2>
+ 				<section class="filters__filter filter-price">
+ 					<h3 class="filter-price__title">Стоимость</h3>
+ 					<input type="range" min="0" max="5000">
+ 				</section>
+ 				<section class="filters__filter filter-color">
+ 					<h3 class="filter-color__title">Цвет</h3>
+ 					<ul class="filter-color__list color">
+ 						<li class="color__item color-item">
+ 							<input class="color-item__box" type="checkbox" name="black" id="black">
+ 							<label class="color-item__title" for="black">Черный</label>
+ 						</li>
+ 						<li class="color__item color-item">
+ 							<input class="color-item__box" type="checkbox" name="white" id="white">
+ 							<label class="color-item__title" for="white">Белый</label>
+ 						</li>
+ 						<li class="color__item color-item">
+ 							<input class="color-item__box" type="checkbox" name="blue" id="blue">
+ 							<label class="color-item__title" for="blue">Синий</label>
+ 						</li>
+ 						<li class="color__item color-item">
+ 							<input class="color-item__box" type="checkbox" name="red" id="red">
+ 							<label class="color-item__title" for="red">Красный</label>
+ 						</li>
+ 						<li class="color__item color-item">
+ 							<input class="color-item__box" type="checkbox" name="pink" id="pink">
+ 							<label class="color-item__title" for="pink">Розовый</label>
+ 						</li>
+ 					</ul>
+ 				</section>
+ 				<section class="filters__filter filter-bluetooth">
+ 					<h3 class="filter-bluetooth__title">Bluetooth</h3>
+ 					<ul class="filter-bluetooth__list bluetooth-having">
+ 						<li class="bluetooth-having__item bluetooth-item">
+ 							<input class="bluetooth-item__box" type="radio" name="bluethooth-yes" id="bluethooth-yes">
+ 							<label class="bluetooth-item__title" for="bluethooth-yes">Черный</label>
+ 						</li>
+ 						<li class="bluetooth-having__item bluetooth-item">
+ 							<input class="bluetooth-item__box" type="radio" name="bluethooth-no" id="bluethooth-no">
+ 							<label class="bluetooth-item__title" for="bluetooth-no">Белый</label>
+ 						</li>
+ 					</ul>
+ 				</section>
+ 				<input class="btn filters__btn" type="submit" value="Показать">
  			</section>
 
- 			<section class="goods">
- 				<h2 class="visually-hidden">Товары</h2>
- 				<ul class="goods__list goods-list">
- 					<li class="goods-list__item goods-item">
- 						<div class="good-item__section">
- 							<img class="goods-item__picture" src="amateur-selfi.jpg" width="250" height="250" alt="Любительская селфи-палка">
- 							<p class="goods-item__text">
- 								<h3 class="goods-item__title">Любительская селфи-палка</h3>
- 								<span class="goods-item__price">500 руб.</span>
+ 			<div class="main__section">
+ 				<section class="main__section-sort sort">
+ 					<h2 class="sort__title">Сортировка:</h2>
+ 					<ul class="sort__list sort-list">
+ 						<li class="sort-list__item"><a class="sort-list__link" href="#">По цене</a></li>
+ 						<li class="sort-list__item"><a class="sort-list__link" href="#">По типу</a></li>
+ 						<li class="sort-list__item"><a class="sort-list__link" href="#">По популярности</a></li>
+ 					</ul>
+ 					<ul class="sort__list sort-destination">
+ 						<li class="sort-destination__item sort-destination__item--up"></li>
+ 						<li class="sort-destination__item sort-destination__item--down"></li>
+ 					</ul>
+ 				</section>
+
+ 				<section class="goods">
+ 					<h2 class="visually-hidden">Товары</h2>
+ 					<ul class="goods__list goods-list">
+ 						<li class="goods-list__item goods-item">
+ 							<div class="good-item__section">
+ 								<img class="goods-item__picture" src="amateur-selfi.jpg" width="250" height="250" alt="Любительская селфи-палка">
+ 								<p class="goods-item__text">
+ 									<h3 class="goods-item__title">Любительская селфи-палка</h3>
+ 									<span class="goods-item__price">500 руб.</span>
+ 								</p>
+ 							</div>
+ 							<div class="good-item__section good-action visually-hidden">
+ 								<a class="btn good-action__link" href="#">В корзину</a>
+ 								<a class="good-action__link" href="#">Добавить к сравнению</a>
+ 							</div>
+ 						</li>
+ 						<li class="goods-list__item goods-item">
+ 							<div class="good-item__section">
+ 								<img class="goods-item__picture" src="proffecional-selfi.jpg" width="250" height="250" alt="Профессиональная селфи-палка">
+ 								<p class="goods-item__text">
+ 									<h3 class="goods-item__title">Профессиональная селфи-палка</h3>
+ 									<span class="goods-item__price">1 500 руб.</span>
  							</p>
- 						</div>
- 						<div class="good-item__section good-action visually-hidden">
- 							<a class="btn good-action__link" href="#">В корзину</a>
- 							<a class="good-action__link" href="#">Добавить к сравнению</a>
- 						</div>
- 					</li>
- 					<li class="goods-list__item goods-item">
- 						<div class="good-item__section">
- 							<img class="goods-item__picture" src="proffecional-selfi.jpg" width="250" height="250" alt="Профессиональная селфи-палка">
- 							<p class="goods-item__text">
- 								<h3 class="goods-item__title">Профессиональная селфи-палка</h3>
- 								<span class="goods-item__price">1 500 руб.</span>
- 						</p>
- 						</div>
- 						<div class="good-item__section good-action visually-hidden">
- 							<a class="btn good-action__link" href="#">В корзину</a>
- 							<a class="good-action__link" href="#">Добавить к сравнению</a>
- 						</div>
- 					</li>
- 					<li class="goods-list__item goods-item">
- 						<div class="good-item__section">
- 							<img class="goods-item__picture" src="swimming-selfi.jpg" width="250" height="250" alt="Непотопляемая селфи-палка">
- 							<p class="goods-item__text">
- 								<h3 class="goods-item__title">Непотопляемая селфи-палка</h3>
- 								<span class="goods-item__price">2 500 руб.</span>
- 							</p>
- 						</div>
- 						<div class="good-item__section good-action visually-hidden">
- 							<a class="btn good-action__link" href="#">В корзину</a>
- 							<a class="good-action__link" href="#">Добавить к сравнению</a>
- 						</div>
- 					</li>
- 					<li class="goods-list__item goods-item">
- 						<div class="good-item__section">
- 							<img class="goods-item__picture" src="hand-selfi.jpg" width="250" height="250" alt="Cелфи-палка 'Следуй за мной'">
- 							<p class="goods-item__text">
- 								<h3 class="goods-item__title">Cелфи-палка "Следуй за мной"</h3>
- 								<span class="goods-item__price">4 900 руб.</span>
- 							</p>
- 						</div>
- 						<div class="good-item__section good-action visually-hidden">
- 							<a class="btn good-action__link" href="#">В корзину</a>
- 							<a class="good-action__link" href="#">Добавить к сравнению</a>
- 						</div>
- 					</li>
- 				</ul>
- 			</section>
+ 							</div>
+ 							<div class="good-item__section good-action visually-hidden">
+ 								<a class="btn good-action__link" href="#">В корзину</a>
+ 								<a class="good-action__link" href="#">Добавить к сравнению</a>
+ 							</div>
+ 						</li>
+ 						<li class="goods-list__item goods-item">
+ 							<div class="good-item__section">
+ 								<img class="goods-item__picture" src="swimming-selfi.jpg" width="250" height="250" alt="Непотопляемая селфи-палка">
+ 								<p class="goods-item__text">
+ 									<h3 class="goods-item__title">Непотопляемая селфи-палка</h3>
+ 									<span class="goods-item__price">2 500 руб.</span>
+ 								</p>
+ 							</div>
+ 							<div class="good-item__section good-action visually-hidden">
+ 								<a class="btn good-action__link" href="#">В корзину</a>
+ 								<a class="good-action__link" href="#">Добавить к сравнению</a>
+ 							</div>
+ 						</li>
+ 						<li class="goods-list__item goods-item">
+ 							<div class="good-item__section">
+ 								<img class="goods-item__picture" src="hand-selfi.jpg" width="250" height="250" alt="Cелфи-палка 'Следуй за мной'">
+ 								<p class="goods-item__text">
+ 									<h3 class="goods-item__title">Cелфи-палка "Следуй за мной"</h3>
+ 									<span class="goods-item__price">4 900 руб.</span>
+ 								</p>
+ 							</div>
+ 							<div class="good-item__section good-action visually-hidden">
+ 								<a class="btn good-action__link" href="#">В корзину</a>
+ 								<a class="good-action__link" href="#">Добавить к сравнению</a>
+ 							</div>
+ 						</li>
+ 					</ul>
+ 				</section>
  			
- 			<div class="pagination">
- 				<ul class="pagination__list">
- 					<li class="pagination__item"><a class="pagination__link pagination__link--prev"  href="#">Назад</a></li>
- 					<li class="pagination__item"><a class="pagination__link pagination__link--active"  href="#">1</a></li>
- 					<li class="pagination__item"><a class="pagination__link"  href="#">2</a></li>
- 					<li class="pagination__item"><a class="pagination__link"  href="#">3</a></li>
- 					<li class="pagination__item"><a class="pagination__link pagination__link--next"  href="#">Вперед</a></li>
- 				</ul>
+ 				<div class="pagination">
+ 					<ul class="pagination__list">
+ 						<li class="pagination__item"><a class="pagination__link pagination__link--prev"  href="#">Назад</a></li>
+ 						<li class="pagination__item"><a class="pagination__link pagination__link--active"  href="#">1</a></li>
+ 						<li class="pagination__item"><a class="pagination__link"  href="#">2</a></li>
+ 						<li class="pagination__item"><a class="pagination__link"  href="#">3</a></li>
+ 						<li class="pagination__item"><a class="pagination__link pagination__link--next"  href="#">Вперед</a></li>
+ 					</ul>
+ 				</div>
  			</div>
  		</div>
  	</main>
