@@ -48,49 +48,51 @@
  		<div class="main__section-catalog">
  			<section class="filters">
  				<h2 class="filters__title">Фильтр</h2>
- 				<section class="filters__filter filter-price">
- 					<h3 class="filter-price__title">Стоимость</h3>
- 					<input class="filter-price__input" type="range" min="0" max="5000">
- 				</section>
- 				<section class="filters__filter filter-color">
- 					<h3 class="filter-color__title">Цвет</h3>
- 					<ul class="filter-color__list color">
- 						<li class="color__item color-item">
- 							<input class="color-item__box" type="checkbox" name="black" id="black">
- 							<label class="color-item__title" for="black">Черный</label>
- 						</li>
- 						<li class="color__item color-item">
- 							<input class="color-item__box" type="checkbox" name="white" id="white">
- 							<label class="color-item__title" for="white">Белый</label>
- 						</li>
- 						<li class="color__item color-item">
- 							<input class="color-item__box" type="checkbox" name="blue" id="blue">
- 							<label class="color-item__title" for="blue">Синий</label>
- 						</li>
- 						<li class="color__item color-item">
- 							<input class="color-item__box" type="checkbox" name="red" id="red">
- 							<label class="color-item__title" for="red">Красный</label>
- 						</li>
- 						<li class="color__item color-item">
- 							<input class="color-item__box" type="checkbox" name="pink" id="pink">
- 							<label class="color-item__title" for="pink">Розовый</label>
- 						</li>
- 					</ul>
- 				</section>
- 				<section class="filters__filter filter-bluetooth">
- 					<h3 class="filter-bluetooth__title">Bluetooth</h3>
- 					<ul class="filter-bluetooth__list bluetooth-having">
- 						<li class="bluetooth-having__item bluetooth-item">
- 							<input class="bluetooth-item__box" type="radio" name="bluethooth-yes" id="bluethooth-yes">
- 							<label class="bluetooth-item__title" for="bluethooth-yes">Есть</label>
- 						</li>
- 						<li class="bluetooth-having__item bluetooth-item">
- 							<input class="bluetooth-item__box" type="radio" name="bluethooth-no" id="bluethooth-no">
- 							<label class="bluetooth-item__title" for="bluetooth-no">Нет</label>
- 						</li>
- 					</ul>
- 				</section>
- 				<input class="btn filters__btn" type="submit" name="show" value="Показать">
+ 				<form class="filters__form" action="/echo" method="get">
+ 					<section class="filters__filter filter-price">
+ 						<h3 class="filter-price__title">Стоимость</h3>
+ 						<input class="filter-price__input" type="range" min="0" max="5000">
+ 					</section>
+ 					<section class="filters__filter filter-color">
+ 						<h3 class="filter-color__title">Цвет</h3>
+ 						<ul class="filter-color__list color">
+ 							<li class="color__item color-item">
+ 								<input class="color-item__box" type="checkbox" name="black" id="black">
+ 								<label class="color-item__title" for="black">Черный</label>
+ 							</li>
+ 							<li class="color__item color-item">
+ 								<input class="color-item__box" type="checkbox" name="white" id="white">
+ 								<label class="color-item__title" for="white">Белый</label>
+ 							</li>
+ 							<li class="color__item color-item">
+ 								<input class="color-item__box" type="checkbox" name="blue" id="blue">
+ 								<label class="color-item__title" for="blue">Синий</label>
+ 							</li>
+ 							<li class="color__item color-item">
+ 								<input class="color-item__box" type="checkbox" name="red" id="red">
+ 								<label class="color-item__title" for="red">Красный</label>
+ 							</li>
+ 							<li class="color__item color-item">
+ 								<input class="color-item__box" type="checkbox" name="pink" id="pink">
+ 								<label class="color-item__title" for="pink">Розовый</label>
+ 							</li>
+ 						</ul>
+ 					</section>
+ 					<section class="filters__filter filter-bluetooth">
+ 						<h3 class="filter-bluetooth__title">Bluetooth</h3>
+ 						<ul class="filter-bluetooth__list bluetooth-having">
+ 							<li class="bluetooth-having__item bluetooth-item">
+ 								<input class="bluetooth-item__box" type="radio" name="bluethooth" id="bluethooth-yes">
+ 								<label class="bluetooth-item__title" for="bluethooth-yes">Есть</label>
+ 							</li>
+ 							<li class="bluetooth-having__item bluetooth-item">
+ 								<input class="bluetooth-item__box" type="radio" name="bluethooth" id="bluethooth-no">
+ 								<label class="bluetooth-item__title" for="bluetooth-no">Нет</label>
+ 							</li>
+ 						</ul>
+ 					</section>
+ 					<input class="btn filters__btn" type="submit" name="show" value="Показать">
+ 				</form>
  			</section>
 
  			<div class="main__section">
