@@ -9,7 +9,9 @@
  		<a class="header__logo" href="index.html">DEVICE</a>
  		<nav class="header__main-menu main-menu">
  			<div class="main-menu__container">
- 				<span>Поиск по сайту</span>
+ 				<form class="main-menu__form" action="/echo" method="post">
+ 					<input class="main-menu__search" type="search" name="search" placeholder="Поиск по сайту">
+ 				</form>
  				<ul class="main-menu__list user-menu">
  					<li class="user-menu__item"><a class="user-menu__link" href="#">Валентин Петухов</a></li>
  					<li class="user-menu__item"><a class="user-menu__link" href="#">Выйти</a></li>
@@ -48,7 +50,7 @@
  				<h2 class="filters__title">Фильтр</h2>
  				<section class="filters__filter filter-price">
  					<h3 class="filter-price__title">Стоимость</h3>
- 					<input type="range" min="0" max="5000">
+ 					<input class="filter-price__input" type="range" min="0" max="5000">
  				</section>
  				<section class="filters__filter filter-color">
  					<h3 class="filter-color__title">Цвет</h3>
@@ -80,15 +82,15 @@
  					<ul class="filter-bluetooth__list bluetooth-having">
  						<li class="bluetooth-having__item bluetooth-item">
  							<input class="bluetooth-item__box" type="radio" name="bluethooth-yes" id="bluethooth-yes">
- 							<label class="bluetooth-item__title" for="bluethooth-yes">Черный</label>
+ 							<label class="bluetooth-item__title" for="bluethooth-yes">Есть</label>
  						</li>
  						<li class="bluetooth-having__item bluetooth-item">
  							<input class="bluetooth-item__box" type="radio" name="bluethooth-no" id="bluethooth-no">
- 							<label class="bluetooth-item__title" for="bluetooth-no">Белый</label>
+ 							<label class="bluetooth-item__title" for="bluetooth-no">Нет</label>
  						</li>
  					</ul>
  				</section>
- 				<input class="btn filters__btn" type="submit" value="Показать">
+ 				<input class="btn filters__btn" type="submit" name="show" value="Показать">
  			</section>
 
  			<div class="main__section">

@@ -9,7 +9,9 @@
  		<a class="header__logo">DEVICE</a>
  		<nav class="header__main-menu main-menu">
  			<div class="main-menu__container">
- 				<span>Поиск по сайту</span>
+ 				<form class="main-menu__form" action="/echo" method="post">
+ 					<input class="main-menu__search" type="search" name="search" placeholder="Поиск по сайту">
+ 				</form>
  				<ul class="main-menu__list user-menu">
  					<li class="user-menu__item"><a class="user-menu__link" href="#">Войти</a></li>
  					<li class="user-menu__item"><a class="user-menu__link" href="#">Сравнить</a></li>
@@ -45,7 +47,7 @@
  				<li class="recommended-goods__item item-goods">
  					<div class="item-goods--slider-1">
  						<div class="item-goods__img-wrapper">
- 							<img class="item-goods__img" src="img/slider-1.png" width="500" height="500" alt="Самая длинная селфи палка">
+ 							<img class="item-goods__img" src="img/slider-1.png" width="500" height="500" alt="Самая длинная селфи палка 8,5 метров">
  						</div>
  						<div class="item-goods__description description-detail">
  							<b class="description-detail__lead">Делай селфи, как Бен Стиллер!</b>
@@ -83,7 +85,7 @@
  				<li class="recommended-goods__item item-goods">
  					<div class="item-goods--slider-3">
  						<div class="item-goods__img-wrapper">
- 							<img class="item-goods__img" src="img/slider-3.png" width="500" height="500" alt="Квадрокоптер">
+ 							<img class="item-goods__img" src="img/slider-3.png" width="500" height="500" alt="Квадрокоптер с мощным лазером">
  						</div>
  						<div class="item-goods__description description-detail">
  							<b class="description-detail__lead">Порхает как бабочка, жалит как пчела!</b>
@@ -192,16 +194,16 @@
  			<h2 class="visually-hidden">Бренды</h2>
  			<ul class="brands__list">
  				<li class="brands__item">
- 					<img class="brands__picture" src="img/logo-1.jpg" width="150" height="150" alt="dji">
+ 					<img class="brands__picture" src="img/logo-1.jpg" width="150" height="150" alt="Бренд 'dji'">
  				</li>
  				<li class="brands__item">
- 					<img class="brands__picture" src="img/logo-2.jpg" width="150" height="150" alt="SP GADGETS">
+ 					<img class="brands__picture" src="img/logo-2.jpg" width="150" height="150" alt="Бренд 'SP GADGETS'">
  				</li>
  				<li class="brands__item">
- 					<img class="brands__picture" src="img/logo-3.jpg" width="150" height="150" alt="Go Pro">
+ 					<img class="brands__picture" src="img/logo-3.jpg" width="150" height="150" alt="Бренд 'Go Pro'">
  				</li>
  				<li class="brands__item">
- 					<img class="brands__picture" src="img/logo-4.jpg" width="150" height="150" alt="VIVE">
+ 					<img class="brands__picture" src="img/logo-4.jpg" width="150" height="150" alt="Бренд 'VIVE'">
  				</li>
  			</ul>
  		</section>
@@ -252,8 +254,27 @@
  				<li class="social__item"><a class="social__link" href="#">Инстаграм</a></li>
  				<li class="social__item"><a class="social__link" href="#">Твиттер</a></li>
  			</ul>
- 			<span class="footer__copyright"><!--Здесь будет лого HTML Academy--></span>
+ 			<span class="footer__copyright"><!--Для лого HTML Academy--></span>
  		</div>
  	</footer>
+
+ 	<section class="popup">
+ 		<h2 class="visually-hidden">Наишите нам письмо</h2>
+ 		<button class="popup__button" type="button">Закрыть</button>
+ 		<form class="popup__form" action="/echo" method="post">
+ 			<label class="popup_label" for="name">Ваше имя:</label>
+ 			<input class="popup_input" type="text" name="name" id="name" placeholder="Имя Фамилия" required="">
+ 			<label class="popup_label" for="e-mail">Ваш e-mail:</label>
+ 			<input class="popup_input" type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required="">
+ 			<label class="popup_label" for="text">Текст письма:</label>
+ 			<input class="popup_input" type="textarea" name="text" id="text" placeholder="В свободной форме" required="">
+ 			<input class="popup_submit" type="submit" name="send" value="Отправить">
+ 		</form>
+ 	</section>
+
+ 	<section class="popup">
+ 		<h2 class="visually-hidden">Как до нас добраться</h2>
+ 		<button class="popup__button" type="button">Закрыть</button>
+ 	</section>
   </body>
 </html>
