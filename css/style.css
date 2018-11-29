@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'gilroylight';
-    src: url('..fonts/gilroy-light-webfont.woff2') format('woff2'),
-         url('..fonts/gilroy-light-webfont.woff') format('woff');
+    src: url('gilroylightwebfont.woff2') format('woff2'),
+         url('gilroylightwebfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('..fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
-         url('..fonts/gilroy-extrabold-webfont.woff') format('woff');
+    src: url('gilroyextraboldwebfont.woff2') format('woff2'),
+         url('gilroyextraboldwebfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -26,6 +26,10 @@ body{
 	display: none;
 }
 
+.header{
+	background-color: rgba(247, 226, 150, 1);
+}
+
 .logo{
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 48px;
@@ -35,17 +39,17 @@ body{
 	text-decoration: none;
 }
 
-.logo:hover,
-.logo:focus{
-	opacity: 0.6;
-}
-
-.logo:active{
-	opacity: 0.3;
-}
-
 .header__logo{
 	color: rgba(0, 0, 0, 1);
+}
+
+.header__logo:hover,
+.header__logo:focus{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.header__logo:active{
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .main-menu__search,
@@ -59,6 +63,7 @@ body{
 .main-menu__search{
 	color: rgba(0, 0, 0, 0.3);
 
+	background-color: rgba(247, 226, 150, 1);
 	border: none;
 }
 
@@ -93,11 +98,11 @@ body{
 
 .header .user-menu__link:hover,
 .header .user-menu__link:focus{
-	opacity: 0.6;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .header .user-menu__link:active{
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .user-menu .exit-button{
@@ -120,19 +125,20 @@ body{
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
-}
-
-.site-menu__link:hover,
-.site-menu__link:focus{
-	opacity: 0.6;
-}
-
-.site-menu__link:active{
-	opacity: 0.3;
+	letter-spacing: 2px;
 }
 
 .header .site-menu__link{
 	color: rgba(0, 0, 0, 1);
+}
+
+.header .site-menu__link:hover,
+.header .site-menu__link:focus{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.header .site-menu__link:active{
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-menu__link{
@@ -140,15 +146,16 @@ body{
 	font-size: 15px;
 	line-height: 36px;
 	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
 }
 
 .catalog-menu__link:hover,
 .catalog-menu__link:focus{
-	opacity: 0.6;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .catalog-menu__link:active{
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .btn{
@@ -171,21 +178,6 @@ body{
 	color: rgba(0, 0, 0, 0.3);
 
 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(240, 197, 46, 1) 0%, rgba(240, 197, 46, 1) 100%, rgba(255, 255, 255, 1) 100%);
-}
-
-.breadcrumbs{
-	font-family: 'Open Sans', 'Arial', sans-serif;
-	font-size: 14px;
-	line-height: 24px;
-	color: rgba(0, 0, 0, 0.3);
-}
-
-.breadcrumbs:hover{
-	color: rgba(0, 0, 0, 0.6);
-}
-
-.breadcrumbs:active{
-	color: rgba(0, 0, 0, 0.1);
 }
 
 .main__title,
@@ -213,6 +205,35 @@ body{
 	color: rgba(0, 0, 0, 1);
 }
 
+.breadcrumbs{
+	list-style: none;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs__link{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs__link:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs__link:active{
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.filters{
+	background-color: rgba(239, 239, 239, 1);
+}
+
+.filters__filter{
+	border:none;
+}
+
 .filter-price__title,
 .filter-color__title,
 .filter-bluetooth__title{
@@ -223,12 +244,30 @@ body{
 	color: rgba(0, 0, 0, 1);
 }
 
-.color,
-.bluetooth-having{
+.filter-color__list,
+.filter-bluetooth__list{
+	list-style: none;
+}
+
+.filter-color__label,
+.filter-bluetooth__label{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 14px;
 	line-height: 40px;
 	color: rgba(0, 0, 0, 1);
+}
+
+.filter-color__input{
+	border-color: color: rgba(0, 0, 0, 1);
+	border-width: 2px;
+}
+
+.filter-color__input:hover{
+	border-color: color: rgba(0, 0, 0, 0.6);
+}
+
+.filter-color__input:blocked{
+	border-color: color: rgba(0, 0, 0, 0.25);
 }
 
 .goods-item__title{
@@ -246,8 +285,21 @@ body{
 	color: rgba(0, 0, 0, 1);
 }
 
+.footer{
+	background-color: rgba(70, 70, 70, 1);
+}
+
 .footer__logo{
 	color: rgba(255, 198, 0, 1);
+}
+
+.footer__logo:hover,
+.footer__logo:focus{
+	color: rgba(255, 198, 0, 0.6);
+}
+
+.footer__logo:active{
+	color: rgba(255, 198, 0, 0.3);
 }
 
 .footer .user-menu__link{
@@ -256,14 +308,14 @@ body{
 
 .footer .user-menu__link:hover,
 .footer .user-menu__link:focus{
-	opacity: 1;
+	color: rgba(255, 255, 255, 1);
 }
 
 .footer .user-menu__link:active{
-	opacity: 0.3;
+	color: rgba(255, 255, 255, 0.3);
 }
 
-.foorer__section-text,
+.footer__section-text,
 .footer__telephone-link{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 15px;
@@ -273,6 +325,15 @@ body{
 
 .footer .site-menu__link{
 	color: rgba(255, 255, 255, 1);
+}
+
+.footer .site-menu__link:hover,
+.footer .site-menu__link:focus{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.footer .site-menu__link:active{
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .social{
