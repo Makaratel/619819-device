@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'gilroylight';
-    src: url('gilroylightwebfont.woff2') format('woff2'),
-         url('gilroylightwebfont.woff') format('woff');
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('gilroyextraboldwebfont.woff2') format('woff2'),
-         url('gilroyextraboldwebfont.woff') format('woff');
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -270,6 +270,10 @@ body{
 	border-color: color: rgba(0, 0, 0, 0.25);
 }
 
+.goods-list{
+	list-style: none;
+}
+
 .goods-item__title{
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 18px;
@@ -278,10 +282,10 @@ body{
 	color: rgba(0, 0, 0, 1);
 }
 
-.goods-item__title{
+.goods-item__price{
 	font-family: 'gilroylight', 'Arial', sans-serif;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 14px;
+	line-height: 40px;
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -323,6 +327,9 @@ body{
 	color: rgba(255, 255, 255, 1);
 }
 
+.footer__telephone-link{
+	text-decoration: none;
+}
 .footer .site-menu__link{
 	color: rgba(255, 255, 255, 1);
 }
