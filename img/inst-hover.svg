@@ -1,38 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
-  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
-<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
-   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-      <rdf:Description rdf:about=""/>
-   </rdf:RDF>
-</x:xmpmeta>
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                                                                                                    
-                           
-<?xpacket end="w"?></metadata>
-<defs>
-    <style>
-      .cls-1 {
-        opacity: 0.6;
-      }
-    </style>
-  </defs>
-  <image id="_копия" data-name="&apos;=] копия" class="cls-1" width="32" height="32" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxgJLgKf/Q3HAAACC0lEQVRIx62VvYsTURTFf3cykIEgWxgjxOBHwE1hE4KyzSbVCql3QZBlRexSLfhnCBap0gkqIggp7FLYaMQypE2y+JldMAatsk6QeC0yG2ecNzGDnilm3n3nnHfnfV3BAE1RpECONElgypghPboyCXMlJM5RpUTC4DujQ0uGSwzUYZtK2NRPoU1TXKOBZqmR4e8Y0ZCjkIHm2cdZQQ7gUpe3809rMfrqcnDY16zPQB1qMeRzi5o6vzPYXunfg8iwA2CD5qgEpugRhxGiHLc5vWiV9aUMLaAaWLgHMpDjiKfPYx9TqIKtKUqBUT6HB9YrVIEDec7HQEdJUzZF464LYo114DuggXiCokUh9vT5UbDJRffqZTb5SZsDHgJfTdNqkzYIM3yTH7rOXQTY4J680SSnDAZpi6QhvMcaUPZWJ8EmcIYbBmbSiso+FJmZiRZTY/wS0PZsZrwG8kbe1GbMOUPHde1IX+/PJ1Hea4Itvhh4Y5uh0eAiN/WpDBgAaIJbZI0GQ5seG8bkKlzQF3wA8mxFLnbPpstuaC9+8t5lygAc0wcO+fMOndG1ZaIdrvmCZ3knz4jC+UCrIxMbaHHV53xHlx3nPV9LaXkp6W7gRlgVr+TJyY3UZBRbPqIJnoG4NHBjyV0a8+rgbWU5oh7DwqV+Uhn+X2EBUIedxRk0Y1lp8xj/UlwXJjHK+y8z6qiHVoqN6gAAAABJRU5ErkJggg=="/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
+		h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
+	<path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
+		c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
+	<rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+	<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+		 M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
+		h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
+</g>
 </svg>
