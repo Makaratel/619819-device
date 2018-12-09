@@ -814,7 +814,19 @@ main{
 }
 
 .filters__filter{
+	position: relative;
+	margin-top: 40px;
 	border:none;
+}
+
+.filters__filter::before{
+	position: absolute;
+	content: "";
+    top: -10px;
+    left: 10px;
+    width: 201px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 1);
 }
 
 .filters__title,
@@ -843,23 +855,96 @@ main{
 
 .filter-color__label,
 .filter-bluetooth__label{
+	position: relative;
+    cursor: pointer;
+
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 14px;
 	line-height: 40px;
 	color: rgba(0, 0, 0, 1);
 }
 
-.filter-color__input{
-	border-color: rgba(0, 0, 0, 1);
-	border-width: 2px;
+.filter-color__input,
+.filter-bluetooth__input{
+	display: none;
 }
 
-.filter-color__input:hover{
-	border-color: rgba(0, 0, 0, 0.6);
+.filter-color__label::before{
+	position: absolute;
+	content: "";
+    top: -3px;
+    left: -40px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
 }
 
-.filter-color__input:disabled{
-	border-color: rgba(0, 0, 0, 0.25);
+.filter-color__label:hover::before{
+    background-image: url(../img/checkbox-off-hover.svg);
+}
+
+.filter-color__label:active::before{
+    background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-color__label:disabled::before{
+    background-image: url(../img/checkbox-off-disabled.svg);
+}
+
+.filter-color__input:checked ~ .filter-color__label::before{
+	background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-color__input:checked ~ .filter-color__label:hover::before{
+	background-image: url(../img/checkbox-on-hover.svg);
+}
+
+.filter-color__input:checked ~ .filter-color__label:active::before{
+	background-image: url(../img/checkbox-off.svg);
+}
+
+.filter-color__input:checked ~ .filter-color__label:disabled::before{
+	background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.filter-bluetooth__label::before{
+	position: absolute;
+	content: "";
+    top: -3px;
+    left: -40px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/radio-off.svg);
+    background-repeat: no-repeat;
+}
+
+.filter-bluetooth__label:hover::before{
+    background-image: url(../img/radio-off-hover.svg);
+}
+
+.filter-bluetooth__label:active::before{
+    background-image: url(../img/radio-on.svg);
+}
+
+.filter-bluetooth__label:disabled::before{
+    background-image: url(../img/radio-off-disabled.svg);
+}
+
+.filter-bluetooth__input:checked ~ .filter-bluetooth__label::before{
+	background-image: url(../img/radio-on.svg);
+}
+
+.filter-bluetooth__input:checked ~ .filter-bluetooth__label:hover::before{
+	background-image: url(../img/radio-on-hover.svg);
+}
+
+.filter-bluetooth__input:checked ~ .filter-bluetooth__label:active::before{
+	background-image: url(../img/radio-off.svg);
+}
+
+.filter-bluetooth__input:checked ~ .filter-bluetooth__label:disabled::before{
+	background-image: url(../img/radio-on-disabled.svg);
 }
 
 .filters__btn{
@@ -909,7 +994,7 @@ main{
 	background-color: rgba(0, 0, 0, 1);
 }
 
-.sort-destination__linl--down::before{
+.sort-destination__link--down::before{
 	position: absolute;
 	top: 30px;
 	left: 30px;
