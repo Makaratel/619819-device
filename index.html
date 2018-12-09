@@ -14,7 +14,7 @@
  			<div class="main-menu__container">
  				<form class="main-menu__form" action="/echo" method="post">
  					<input class="main-menu__search" type="search" name="search" placeholder="Поиск по сайту">
- 					<button class="main-menu__button visually-hidden" type="submit">Найти</button>
+ 					<button class="main-menu__button" type="submit">Найти</button>
  				</form>
  				<ul class="main-menu__list user-menu">
  					<li class="user-menu__item"><a class="user-menu__link user-menu__link--user" href="#">Войти</a></li>
@@ -24,7 +24,7 @@
  			</div>
  			<ul class="main-menu__list site-menu">
  				<li class="site-menu__item">
- 					<a class="site-menu__link" href="#">Каталог товаров</a>
+ 					<a class="site-menu__link site-menu__link--catalog" href="#">Каталог товаров</a>
  					<ul class="site-menu__list catalog-menu">
  						<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Виртуальная реальность</a></li>
  						<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Моноподы для селфи</a></li>
@@ -62,7 +62,7 @@
  								<dt class="definition-list__term">Длина палки</dt>
  								<dd class="definition-list__determination">5 кг</dd>
  								<dt class="definition-list__term">Вес палки</dt>
- 								<dd class="definition-list__determination">Карбон</dd>s
+ 								<dd class="definition-list__determination">Карбон</dd>
  								<dt class="definition-list__term">Материал палки</dt>
  							</dl>
  						</div>
@@ -266,33 +266,33 @@
  		</div>
  	</footer>
 
- 	<section class="popup-letter visually-hidden">
+ 	<section class="popup-letter">
  		<h2 class="visually-hidden">Наишите нам письмо</h2>
  		<button class="popup-letter__button" type="button">Закрыть</button>
  		<form class="popup-letter__form" action="/echo" method="post">
  			<div class="popup-letter__wrapper">
  				<p class="popup-letter__item">
- 					<label class="popup-letter_label" for="name">Ваше имя:</label>
- 					<input class="popup-letter_input" type="text" name="name" id="name" placeholder="Имя Фамилия" required="">	
+ 					<label class="popup-letter__label" for="name">Ваше имя:</label>
+ 					<input class="popup-letter__input" type="text" name="name" id="name" placeholder="Имя Фамилия" required>	
  				</p>	
  			</div>
  			<div class="popup-letter__wrapper">
  				<p class="popup-letter__item">
- 					<label class="popup-letter_label" for="e-mail">Ваш e-mail:</label>
- 					<input class="popup-letter_input" type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required="">
+ 					<label class="popup-letter__label" for="e-mail">Ваш e-mail:</label>
+ 					<input class="popup-letter__input" type="email" name="e-mail" id="e-mail" placeholder="email@example.com" required>
  				</p>
  			</div>
  			<div class="popup-letter__wrapper">
  				<p class="popup-letter__item">
- 					<label class="popup-letter_label" for="text">Текст письма:</label>
- 					<input class="popup-letter_input" type="textarea" id="text" placeholder="В свободной форме" required="">	
+ 					<label class="popup-letter__label" for="text">Текст письма:</label>
+ 					<textarea class="popup-letter__input popup-letter__input--area" type="textarea" id="text" placeholder="В свободной форме" required></textarea>
  				</p>
  			</div>
- 			<button class="popup-letter_submit" type="submit">Отправить</button>
+ 			<button class="popup-letter__submit btn" type="submit">Отправить</button>
  		</form>
  	</section>
 
- 	<section class="popup-map visually-hidden">
+ 	<section class="popup-map">
  		<h2 class="visually-hidden">Как до нас добраться</h2>
  		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b575a55b294f5a86c632e22b129513465d77fa45628c45a25bcf5694e5a6ed7&amp;width=100%25&amp;height=559&amp;lang=ru_RU&amp;scroll=true"></script>
  		<button class="popup-map__button" type="button">Закрыть</button>
