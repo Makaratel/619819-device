@@ -272,25 +272,26 @@ main{
 	background-color: rgba(184, 169, 116, 1);
 }
 
+.catalog-menu:hover,
 .site-menu__link--catalog:hover ~ .catalog-menu{
 	display: flex;
-	flex-direction: column;
-	align-content: flex-start;
-	flex-wrap: wrap;
-	height: 140px;
 }
 
 .catalog-menu{
 	position: absolute;
 	margin: 0;
 	padding: 0;
-	margin-top: 30px;
+	padding-top: 30px;
 	padding-left: 60px;
 	left: -60px;
 	width: 1220px;
+	height: 140px;
+	z-index: 1;
 
 	display: none;
-	z-index: 1;
+	flex-direction: column;
+	align-content: flex-start;
+	flex-wrap: wrap;
 	background-color: rgba(247, 226, 150, 1);
 }
 
@@ -1025,6 +1026,10 @@ main{
 	list-style: none;
 }
 
+.goods-item{
+	position: relative;
+}
+
 .goods-item__title{
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 18px;
@@ -1044,6 +1049,47 @@ main{
 	margin: 0;
 	padding: 0;
 	width: 260px;
+}
+
+.goods-action{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 360px;
+	height: 380px;
+	z-index: 1;
+	cursor: pointer;
+
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(239, 239, 239, 0.7);
+}
+
+.goods-item__section:hover ~ .goods-action{
+	display: flex;
+}
+
+.goods-action__button{
+	background-image: linear-gradient(to bottom, transparent 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, transparent 60%);
+}
+
+.goods-action__link{
+	margin-top: 15px;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 13px;
+	line-height: 36px;
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.goods-action__link:hover{
+	color: rgba(0, 0, 0, 1);
+}
+
+.goods-action__link:active{
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .pagination{
