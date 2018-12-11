@@ -394,10 +394,19 @@ main{
 	list-style: none;
 }
 
-.item-goods--slider-1{
-	margin-left: 80px;
-	display: flex;
+.item-goods--slider-1,
+.item-goods--slider-2,
+.item-goods--slider-3{
+	display: none;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.recommended-goods__slider-input--1:checked ~ .recommended-goods__list .item-goods--slider-1,
+.recommended-goods__slider-input--2:checked ~ .recommended-goods__list .item-goods--slider-2,
+.recommended-goods__slider-input--3:checked ~ .recommended-goods__list .item-goods--slider-3{
+	display: flex;
 }
 
 .item-goods__img-wrapper{
@@ -419,6 +428,10 @@ main{
 	color: rgba(0, 0, 0, 1);
 }
 
+.item-goods--slider-3 .description-detail__lead{
+	width: 500px;
+}
+
 .description-detail__lead::before{
 	position: absolute;
 	top: 30px;
@@ -429,17 +442,27 @@ main{
 	background-color: rgba(255, 255, 255, 1);
 }
 
-.description-detail__lead::after{
+.item-goods--slider-1 .description-detail__lead::after,
+.item-goods--slider-2 .description-detail__lead::after,
+.item-goods--slider-3 .description-detail__lead::after{
 	position: absolute;
+	content: "01";
 	top: 55px;
 	right: 105px;
-	content: "01";
 	width: 50px;
 	height: 50px;
 
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 179.2px;
 	color: rgba(255, 255, 255, 1);
+}
+
+.item-goods--slider-2 .description-detail__lead::after{
+	content: "02";
+}
+
+.item-goods--slider-3 .description-detail__lead::after{
+	content: "03";
 }
 
 .description-detail__text{
@@ -986,6 +1009,8 @@ main{
 .sort{
 	width: 100%;
 	min-height: 70px;
+	margin-bottom: 70px;
+
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -1405,7 +1430,7 @@ main{
 	left: 50%;
 	margin-left: -480px;
 
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
@@ -1479,6 +1504,7 @@ main{
 	left: 50%;
 	margin-left: -480px;
 
+	display: none;
 	z-index: 2;
 	background-color: rgba(255 ,255 ,255, 1);
 	box-shadow: 0 0 10px 1px rgba(212, 212, 212, 1);
