@@ -608,6 +608,10 @@ main{
 	align-items: center;
 }
 
+.features__slider-input{
+	display: none;
+}
+
 .features__list{
 	position: relative;
 	margin-right: 240px;
@@ -618,23 +622,54 @@ main{
 	margin-bottom: 25px;
 }
 
-.advantages{
-	display: flex;
+.advantages::before{
+	position: absolute;
+	top: -40px;
+	left: -240px;
+	content: "";
+	width: 4px;
+	height: 320px;
+	background-color: rgba(0, 0, 0, 1);
 }
 
-.advantages::after{
+.advantages__item{
+	position: relative;
+	display: none;
+	padding: 25px 0;
+}
+
+.features__slider-input--1:checked ~ .advantages .advantages__item--slider-1,
+.features__slider-input--2:checked ~ .advantages .advantages__item--slider-2,
+.features__slider-input--3:checked ~ .advantages .advantages__item--slider-3{
+	display: block;
+}
+
+.advantages__item::after{
 	position: absolute;
 	top: 20px;
-	left: 560px;
+	left: 540px;
 	content: "";
-	width: 140px;
-	height: 165px;
-
-	background-image: url("../img/delivery.svg");
+	width: 170px;
+	height: 190px;
 	background-repeat: no-repeat;
 }
 
+.advantages__item--slider-1::after{
+	background-image: url("../img/delivery.svg");
+}
+
+.advantages__item--slider-2::after{
+	background-image: url("../img/garanty.svg");
+}
+
+.advantages__item--slider-3::after{
+	background-image: url("../img/credit.svg");
+}
+
 .advantages__title{
+	margin: 0;
+	padding: 0;
+
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 47px;
 	line-height: 48px;
@@ -649,17 +684,7 @@ main{
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.controls-features::after{
-	position: absolute;
-	top:-100px;
-	left: 300px;
-	content: "";
-	width: 4px;
-	height: 320px;
-	background-color: rgba(0, 0, 0, 1);
-}
-
-.features__label{
+.controls-features__label{
 	display: inline-block;
 	padding: 0 20px;
 	width: 160px;
@@ -676,11 +701,19 @@ main{
 	background-image: linear-gradient(to bottom, rgba(229, 229, 229, 1) 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, rgba(229, 229, 229, 1) 60%);
 }
 
-.features__label:hover{
+.controls-features__label:hover{
 	background-image: linear-gradient(to bottom, rgba(240, 197, 46, 1) 0%, rgba(240, 197, 46, 1) 100%);
 }
 
-.features__label:active{
+.controls-features__label:active{
+	width: 220px;
+	text-align: left;
+	color: rgba(240, 197, 46, 1);
+	background-image: none;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+.features__slider-input--1:checked ~ .controls-features .controls-features__label--slider-1{
 	width: 220px;
 	text-align: left;
 	color: rgba(240, 197, 46, 1);
