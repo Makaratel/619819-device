@@ -888,11 +888,84 @@ main{
 .filter-price__title,
 .filter-color__title,
 .filter-bluetooth__title{
+	margin: 0;
+	padding: 0;
+
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
 	color: rgba(0, 0, 0, 1);
+}
+
+.filter-price__title{
+	margin-bottom: 25px;
+}
+
+.price-control{
+	position: relative;
+}
+
+.price-control__scale{
+	height: 2px;
+	width: 201px;
+	margin-bottom: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.price-control__bar{
+	height: 100%;
+	width: 80%;
+	background-color: rgba(145, 201, 47, 1);
+}
+
+.price-control__toogle{
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid rgba(255, 255, 255, 1);
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 1);
+	cursor: pointer;
+}
+
+.price-control__toogle:active{
+	transform: scale(1.2);
+}
+
+.price-control__label{
+	position: absolute;
+}
+
+.price-control__label,
+.price-control__input{
+	font-family: 'gilroylight', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.price-control__toogle--min,
+.price-control__label--min{
+	left: 0;
+}
+
+.price-control__toogle--max,
+.price-control__label--max{
+	left: 80%;
+}
+
+.price-control__label--max{
+	margin-left: -22px;
+	margin-right: -22px;
+}
+
+.price-control__input{
+	max-width: 50px;
+	border: none;
+	outline: none;
+	background-color: transparent;
 }
 
 .filter-color__list,

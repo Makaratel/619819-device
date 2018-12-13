@@ -61,7 +61,21 @@
  				<form class="filters__form" action="/echo" method="get">
  					<fieldset class="filters__filter filter-price">
  						<legend class="filter-price__title">Стоимость</legend>
- 						<input class="filter-price__input" type="range" min="0" max="5000">
+ 						<div class="filter-price__wrapper">
+ 							<div class="filter-price__control price-control">
+ 								<div class="price-control__scale">
+ 									<div class="price-control__bar"></div>
+ 								</div>
+ 								<div class="price-control__toogle price-control__toogle--min"></div>
+ 								<div class="price-control__toogle price-control__toogle--max"></div>
+ 								<label class="price-control__label price-control__label--min">
+ 									от <input class="price-control__input" type="text" name="min-price" value="0">
+ 								</label>
+ 								<label class="price-control__label price-control__label--max">
+ 									до <input class="price-control__input" type="text" name="max-price" value="3000">
+ 								</label>
+ 							</div>
+ 						</div>
  					</fieldset>
  					<fieldset class="filters__filter filter-color">
  						<legend class="filter-color__title">Цвет</legend>
