@@ -1631,4 +1631,6 @@ main{
 	background-color: rgba(247, 226, 150, 1);
 }
 
-/* */
+.popup{
+	color: black;
+}
