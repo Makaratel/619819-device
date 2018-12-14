@@ -38,6 +38,7 @@ main{
 }
 
 .container{
+	box-sizing: border-box;
 	width: 1160px;
 	margin: 0 auto;
 	padding: 0 60px;
@@ -143,6 +144,16 @@ main{
 	display: inline-block;
 }
 
+.main-menu__form::after{
+	position: absolute;
+	bottom: 1px;
+	left: -35px;
+	content: "";
+	width: 250px;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 1);
+}
+
 .user-menu,
 .site-menu,
 .catalog-menu,
@@ -239,6 +250,17 @@ main{
 	justify-content: space-between;
 }
 
+.extra-menu::after{
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	content: "";
+	width: 100px;
+	height: 7px;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 1;
+}
+
 .site-menu__link,
 .extra-menu__link{
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
@@ -307,9 +329,9 @@ main{
 	padding-top: 30px;
 	padding-left: 60px;
 	left: -60px;
-	width: 1220px;
+	width: 1100px;
 	height: 140px;
-	z-index: 1;
+	z-index: 2;
 
 	display: none;
 	flex-direction: column;
@@ -388,17 +410,25 @@ main{
 	margin: 0;
 	padding: 0;
 	margin-bottom: 100px;
-
-	display: flex;
-	flex-wrap: wrap;
 	list-style: none;
+}
+
+.item-goods__img-wrapper{
+	width: 505px;
+	display: flex;
+	justify-content: center;
+}
+
+.item-goods--slider-3 .item-goods__img-wrapper{
+	justify-content: flex-end;
 }
 
 .item-goods--slider-1,
 .item-goods--slider-2,
 .item-goods--slider-3{
+	position: relative;
 	display: none;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -409,16 +439,35 @@ main{
 	display: flex;
 }
 
-.item-goods__img-wrapper{
-	margin-right: 120px;
-}
-
 .description-detail{
 	position: relative;
+	width: 520px;
+}
+
+.item-goods--slider-1 .description-detail::before,
+.item-goods--slider-2 .description-detail::before,
+.item-goods--slider-3 .description-detail::before{
+	position: absolute;
+	content: "01";
+	top: -5px;
+	right: 0;
+	
+	font-family: 'gilroyextrabold', 'Arial', sans-serif;
+	font-size: 179.2px;
+	line-height: 179.2px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.item-goods--slider-2 .description-detail::before{
+	content: "02";
+}
+
+.item-goods--slider-3 .description-detail::before{
+	content: "03";
 }
 
 .description-detail__lead{
-	display: inline-block;
+	display: block;
 	width: 390px;
 	margin-top: 85px;
 
@@ -430,39 +479,6 @@ main{
 
 .item-goods--slider-3 .description-detail__lead{
 	width: 500px;
-}
-
-.description-detail__lead::before{
-	position: absolute;
-	top: 30px;
-	left: 0px;
-	content: "";
-	width: 100px;
-	height: 7px;
-	background-color: rgba(255, 255, 255, 1);
-}
-
-.item-goods--slider-1 .description-detail__lead::after,
-.item-goods--slider-2 .description-detail__lead::after,
-.item-goods--slider-3 .description-detail__lead::after{
-	position: absolute;
-	content: "01";
-	top: 55px;
-	right: 105px;
-	width: 50px;
-	height: 50px;
-
-	font-family: 'gilroyextrabold', 'Arial', sans-serif;
-	font-size: 179.2px;
-	color: rgba(255, 255, 255, 1);
-}
-
-.item-goods--slider-2 .description-detail__lead::after{
-	content: "02";
-}
-
-.item-goods--slider-3 .description-detail__lead::after{
-	content: "03";
 }
 
 .description-detail__text{
@@ -508,8 +524,11 @@ main{
 
 .controls{
 	position: absolute;
-	top: 335px;
-	right: 140px;
+	top: 345px;
+	right: 95px;
+
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .controls__label{
@@ -519,7 +538,8 @@ main{
   	height: 10px;
   	border-radius: 50%;
   	border: 2px solid rgba(0, 0, 0, 1);
-  	background-color: rgba(255, 255, 255, 1);;
+  	background-color: rgba(255, 255, 255, 1);
+  	cursor: pointer;
 }
 
 #radio-1:checked ~ .controls label[for="radio-1"],
@@ -532,6 +552,8 @@ main{
 	margin: 0;
 	padding: 0;
 	margin-bottom: 70px;
+	margin-left: -60px;
+	margin-right: -60px;
 	display: flex;
 
 	flex-wrap: wrap;
@@ -598,14 +620,16 @@ main{
 }
 
 .features{
+	height: 375px;
 	margin-bottom: 100px;
- 	background-color: rgba(229, 229, 229, 1);
+ 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 85px, rgba(229, 229, 229, 1) 85px, rgba(229, 229, 229, 1) 100%);
 }
 
 .features .container{
+	position: relative;
 	display: flex;
 	flex-direction: row-reverse;
-	align-items: center;
+	justify-content: center;
 }
 
 .features__slider-input{
@@ -614,7 +638,6 @@ main{
 
 .features__list{
 	position: relative;
-	margin-right: 240px;
 	list-style: none;
 }
 
@@ -622,12 +645,16 @@ main{
 	margin-bottom: 25px;
 }
 
+.advantages{
+	margin-left: 25px;
+}
+
 .advantages::before{
 	position: absolute;
-	top: -40px;
-	left: -240px;
+	top: -30px;
+	left: -85px;
 	content: "";
-	width: 4px;
+	width: 7px;
 	height: 320px;
 	background-color: rgba(0, 0, 0, 1);
 }
@@ -647,7 +674,7 @@ main{
 .advantages__item::after{
 	position: absolute;
 	top: 20px;
-	left: 540px;
+	left: 555px;
 	content: "";
 	width: 170px;
 	height: 190px;
@@ -669,6 +696,7 @@ main{
 .advantages__title{
 	margin: 0;
 	padding: 0;
+	padding-top: 15px;
 
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 47px;
@@ -684,9 +712,16 @@ main{
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.controls-features{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 65px;
+}
+
 .controls-features__label{
 	display: inline-block;
-	padding: 0 20px;
 	width: 160px;
 
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
@@ -698,7 +733,7 @@ main{
 	letter-spacing: 2px;
 	text-align: center;
 
-	background-image: linear-gradient(to bottom, rgba(229, 229, 229, 1) 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, rgba(229, 229, 229, 1) 60%);
+	background-image: linear-gradient(to bottom, transparent 40%, rgba(240, 197, 46, 1) 40%, rgba(240, 197, 46, 1) 60%, transparent 60%);
 }
 
 .controls-features__label:hover{
@@ -706,15 +741,19 @@ main{
 }
 
 .controls-features__label:active{
-	width: 220px;
+	width: 252px;
+	padding-left: 20px;
 	text-align: left;
 	color: rgba(240, 197, 46, 1);
 	background-image: none;
 	background-color: rgba(0, 0, 0, 1);
 }
 
-.features__slider-input--1:checked ~ .controls-features .controls-features__label--slider-1{
-	width: 220px;
+.features__slider-input--1:checked ~ .controls-features .controls-features__label--slider-1,
+.features__slider-input--2:checked ~ .controls-features .controls-features__label--slider-2,
+.features__slider-input--3:checked ~ .controls-features .controls-features__label--slider-3{
+	width: 252px;
+	padding-left: 20px;
 	text-align: left;
 	color: rgba(240, 197, 46, 1);
 	background-image: none;
@@ -1198,7 +1237,7 @@ main{
 .goods-list{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
 }
 
@@ -1272,7 +1311,7 @@ main{
 }
 
 .pagination{
-	width: 760px;
+	width: 700px;
 	height: 70px;
 	margin-bottom: 75px;
 	background-color: rgba(235, 235, 235, 1);
@@ -1629,8 +1668,4 @@ main{
 
 	border-radius: 50%;
 	background-color: rgba(247, 226, 150, 1);
-}
-
-.popup{
-	color: black;
 }
