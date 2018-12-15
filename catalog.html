@@ -13,7 +13,7 @@
  		<nav class="header__main-menu main-menu">
  			<div class="main-menu__container">
  				<form class="main-menu__form" action="/echo" method="post">
- 					<input class="main-menu__search" type="search" name="search" placeholder="Поиск по сайту">
+ 					<input class="main-menu__search" type="search" name="search" placeholder="Поиск по сайту" autocomplete="off">
  					<button class="main-menu__button" type="submit">Найти</button>
  				</form>
  				<ul class="main-menu__list user-menu">
@@ -28,7 +28,7 @@
  					<a class="site-menu__link site-menu__link--catalog" href="#">Каталог товаров</a>
  					<ul class="site-menu__list catalog-menu">
  						<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Виртуальная реальность</a></li>
- 						<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Моноподы для селфи</a></li>
+ 						<li class="catalog-menu__item"><a class="catalog-menu__link" href="catalog.html">Моноподы для селфи</a></li>
  						<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Экшн-камеры</a></li>
  						<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Фитнес-браслеты</a></li>
  						<li class="catalog-menu__item"><a class="catalog-menu__link" href="#">Умные часы</a></li>
@@ -55,10 +55,10 @@
  			</ul>
  		</div>
 
- 		<div class="main__section-catalog container">
+ 		<div class="main__section-catalog">
  			<section class="filters">
- 				<h2 class="filters__title">Фильтр</h2>
- 				<form class="filters__form" action="/echo" method="get">
+ 				<h2 class="filters__title">Фильтр:</h2>
+ 				<form class="filters__form container" action="/echo" method="get">
  					<fieldset class="filters__filter filter-price">
  						<legend class="filter-price__title">Стоимость</legend>
  						<div class="filter-price__wrapper">
@@ -133,7 +133,7 @@
  					</ul>
  				</section>
 
- 				<section class="goods">
+ 				<section class="goods container">
  					<h2 class="visually-hidden">Товары</h2>
  					<ul class="goods__list goods-list">
  						<li class="goods-list__item goods-item">
@@ -193,7 +193,7 @@
  			
  				<div class="pagination">
  					<ul class="pagination__list">
- 						<li class="pagination__item"><a class="pagination__link pagination__link--prev" href="#">Назад</a></li>
+ 						<li class="pagination__item pagination__item--prev"><a class="pagination__link" href="#">Назад</a></li>
  						<li class="pagination__item page-number">
  							<ul class="page-number__list">
  								<li class="page-number__item"><a class="page-number__link page-number__link--active" href="#">1</a></li>
@@ -201,7 +201,7 @@
  								<li class="page-number__item"><a class="page-number__link" href="#">3</a></li>
  							</ul>
  						</li>
- 						<li class="pagination__item"><a class="pagination__link pagination__link--next" href="#">Вперед</a></li>
+ 						<li class="pagination__item pagination__item--next"><a class="pagination__link" href="#">Вперед</a></li>
  					</ul>
  				</div>
  			</div>

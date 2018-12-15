@@ -39,7 +39,7 @@ main{
 
 .container{
 	box-sizing: border-box;
-	width: 1160px;
+	max-width: 1160px;
 	margin: 0 auto;
 	padding: 0 60px;
 }
@@ -55,6 +55,7 @@ main{
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .header__logo{
@@ -123,6 +124,7 @@ main{
 
 .main-menu__button{
 	display: none;
+	margin-left: 150px;
 	padding: 7px 20px;
 	color: rgba(0, 0, 0, 1);
 	outline: 2px solid rgba(0, 0, 0, 1);
@@ -144,12 +146,12 @@ main{
 	display: inline-block;
 }
 
-.main-menu__form::after{
+.main-menu__button::after{
 	position: absolute;
 	bottom: 1px;
 	left: -35px;
 	content: "";
-	width: 250px;
+	width: 355px;
 	height: 2px;
 	background-color: rgba(0, 0, 0, 1);
 }
@@ -924,25 +926,29 @@ main{
 
 .main__section-catalog{
 	display: flex;
-	justify-content: space-between;
 }
 
 .filters{
-	padding-right: 65px;
+	width: 468px;
 	background-color: rgba(239, 239, 239, 1);
+}
+
+.filters__form{
+	padding-left: 95px;
 }
 
 .filters__filter{
 	position: relative;
 	margin-top: 40px;
+	padding: 0;
 	border:none;
 }
 
 .filters__filter::before{
 	position: absolute;
 	content: "";
-    top: -10px;
-    left: 10px;
+    top: 0;
+    left: 0;
     width: 201px;
     height: 2px;
     background-color: rgba(0, 0, 0, 1);
@@ -957,11 +963,22 @@ main{
 	color: rgba(0, 0, 0, 1);
 }
 
+.filters__title{
+	box-sizing: border-box;
+	margin: 0;
+	margin-bottom: 70px;
+	padding-left: 95px;
+	padding-top: 23px;
+	height: 70px;
+	background-color: rgba(220, 220, 220, 1);
+}
+
 .filter-price__title,
 .filter-color__title,
 .filter-bluetooth__title{
 	margin: 0;
 	padding: 0;
+	padding-top: 15px;
 
 	font-family: 'gilroyextrabold', 'Arial', sans-serif;
 	font-size: 18px;
@@ -1228,6 +1245,14 @@ main{
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.sort-list__link:hover{
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-list__link:active{
+	color: rgba(0, 0, 0, 1);
+}
+
 .sort-destination__link{
 	font-size: 1px;
 	margin: -1px;
@@ -1235,21 +1260,20 @@ main{
 }
 
 .goods-list{
+	margin: 0;
+	padding: 0;
+
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 	list-style: none;
 }
-
 .goods-item__section{
 	position: relative;
 }
 
-.goods-item__text{
-	display: inline-flex;
-	
-}
 .goods-item__title{
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 	width: 260px;
@@ -1335,7 +1359,8 @@ main{
 	padding: 23px;
 }
 
-.pagination__item:hover{
+.pagination__item--prev:hover,
+.pagination__item--next:hover{
 	background-color: rgba(217, 217, 217, 1);
 }
 
