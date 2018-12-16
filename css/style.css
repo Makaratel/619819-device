@@ -469,6 +469,7 @@ main{
 }
 
 .description-detail__lead{
+	position: relative;
 	display: block;
 	width: 390px;
 	margin-top: 85px;
@@ -1504,7 +1505,7 @@ main{
 
 .footer__section:last-child{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	position: relative;
 }
 
@@ -1572,11 +1573,13 @@ main{
 }
 
 .footer__copyright{
-	margin-left: 455px;
-	margin-top: 15px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 	content: "";
-	width: 50px;
-	height: 50px;
+	width: 28px;
+	height: 35px;
+
 	background-image: url("../img/logo-academy.svg");
 	background-repeat: no-repeat;
 }
@@ -1650,18 +1653,79 @@ main{
 
 .popup-letter__input{
 	box-sizing: border-box;
-	padding-left: 10px;
+	margin-top: 10px;
+	padding-left: 20px;
 	width: 360px;
 	height: 50px;
 	background-color: rgba(242, 242, 242, 1);
+
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color:color: rgba(0, 0, 0, 1);
 }
 
 .popup-letter__input--area{
+	padding-top: 13px;
 	min-width: 760px;
 	max-width: 760px;
 	min-height: 155px;
-	max-height: 225px;
+	max-height: 270px;
 }
+
+.popup-letter__input::-webkit-input-placeholder{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color:color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-letter__input::-moz-placeholder{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.4);
+}/* Firefox 19+ */
+
+.popup-letter__input:-moz-placeholder{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.4);
+}/* Firefox 18- */
+
+.popup-letter__input:-ms-input-placeholder{
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-letter__input:hover{
+	background-color: rgba(235, 235, 235, 1);
+}
+
+.popup-letter__input:focus{
+	outline: 3px solid rgba(247, 226, 150, 1);
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.popup-letter__input:focus::-webkit-input-placeholder{
+	color: rgba(0, 0, 0, 1);
+}
+
+.popup-letter__input:focus::-moz-placeholder{
+	color: rgba(0, 0, 0, 1);
+}/* Firefox 19+ */
+
+.popup-letter__input:focus:-moz-placeholder{
+	color: rgba(0, 0, 0, 1);
+}/* Firefox 18- */
+
+.popup-letter__input:focus:-ms-input-placeholder{
+	color: rgba(0, 0, 0, 1);
+}
+
 
 .popup-map{
 	position: absolute;
@@ -1680,8 +1744,8 @@ main{
 	box-shadow: 0 0 10px 1px rgba(212, 212, 212, 1);
 }
 
-.popup-letter::after,
-.popup-map::after{
+.popup-letter::before,
+.popup-map::before{
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -1690,7 +1754,30 @@ main{
 	height: 50px;
 	top: 30px;
 	right: 30px;
+	z-index: 1;
 
 	border-radius: 50%;
 	background-color: rgba(247, 226, 150, 1);
+}
+
+.popup-letter::after,
+.popup-map::after{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	content: "x";
+	width: 50px;
+	height: 50px;
+	top: 22px;
+	right: 17px;
+	z-index: 1;
+
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-size: 50px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.popup-letter:hover::before,
+.popup-map:hover::before{
+	background-color: rgba(240, 197, 46, 1);
 }
