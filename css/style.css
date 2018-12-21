@@ -959,8 +959,8 @@ main{
 
 .filters__wrapper{
 	margin-left: auto;
-	margin-right: 110px;
-	width: 330px;
+	max-width: 330px;
+	min-width: 330px;
 }
 
 .filters__form{
@@ -1192,11 +1192,13 @@ main{
 
 .main__section{
 	width: 67.5%;
+	min-width: 818px;
 	background-image: linear-gradient(to bottom, rgba(235, 235, 235, 1) 70px, rgba(255, 255, 255, 1) 70px, rgba(255, 255, 255, 1) 100%);
 }
 
 .main__section-wrapper{
-	width: 845px;
+	max-width: 845px;
+	min-width: 815px;
 	margin-right: auto;
 	display: flex;
 	flex-direction: column;
@@ -1205,10 +1207,12 @@ main{
 }
 
 .sort{
-	width: 815px;
+	width: 100%;
+	min-width: 815px;
 	min-height: 70px;
 	margin-bottom: 70px;
 	align-self: flex-start;
+	flex-grow: 1;
 
 	display: flex;
 	flex-wrap: wrap;
@@ -1297,6 +1301,10 @@ main{
 	font-size: 1px;
 	margin: -1px;
 	color: rgba(235, 235, 235, 1);
+}
+
+.goods{
+	min-width: 815px;
 }
 
 .goods-list{
@@ -1440,6 +1448,7 @@ main{
 }
 
 .footer{
+	min-width: 1195px;
 	padding: 65px 0;
 	background-color: rgba(70, 70, 70, 1);
 }
