@@ -1203,7 +1203,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .sort{
@@ -1312,7 +1312,7 @@ main{
 
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	list-style: none;
 }
 
@@ -1324,6 +1324,7 @@ main{
 
 .goods-item{
 	margin-bottom: 50px;
+	margin-left: 50px;
 }
 
 .goods-item__text{
@@ -1397,7 +1398,7 @@ main{
 }
 
 .pagination{
-	width: 835px;
+	width: 780px;
 	height: 70px;
 	margin-bottom: 75px;
 	background-color: rgba(235, 235, 235, 1);
