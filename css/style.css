@@ -959,7 +959,12 @@ main{
 
 .filters__wrapper{
 	margin-left: auto;
-	max-width: 260px;
+	max-width: 265px;
+	padding-right: 70px;
+}
+
+.filters__form{
+	margin-left: 60px;
 }
 
 .filters__filter{
@@ -992,6 +997,7 @@ main{
 	box-sizing: border-box;
 	margin: 0;
 	margin-bottom: 70px;
+	margin-left: 60px;
 	padding-top: 23px;
 }
 
@@ -1191,7 +1197,7 @@ main{
 }
 
 .main__section-wrapper{
-	max-width: 950px;
+	max-width: 830px;
 	min-width: 815px;
 	margin-right: auto;
 	display: flex;
@@ -1232,7 +1238,7 @@ main{
 }
 
 .sort__title{
-	margin-left: 30px;
+	margin-left: 60px;
 }
 
 .sort-destination__link::after{
@@ -1297,7 +1303,7 @@ main{
 }
 
 .goods{
-	min-width: 900px;
+	min-width: 830px;
 }
 
 .goods-list{
@@ -1391,7 +1397,7 @@ main{
 }
 
 .pagination{
-	width: 700px;
+	width: 835px;
 	height: 70px;
 	margin-bottom: 75px;
 	background-color: rgba(235, 235, 235, 1);
