@@ -1324,7 +1324,31 @@ main{
 
 .goods-item{
 	margin-bottom: 50px;
-	margin-left: 50px;
+	margin-left: 55px;
+	position: relative;
+}
+
+.goods-item--new::after{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	content: "New";
+    top: 29px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
+
+    font-family: 'gilroyextrabold', 'Arial', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.2);
+
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background-color: transparent;
 }
 
 .goods-item__text{
@@ -1345,6 +1369,7 @@ main{
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: bold;
+	text-decoration: none;
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -1682,7 +1707,7 @@ main{
 	content: "";
 	width: 960px;
 	height: 550px;
-	bottom: -150%;
+	bottom: -285%;
 	left: 50%;
 	margin-left: -480px;
 
@@ -1856,7 +1881,7 @@ main{
 	content: "";
 	width: 960px;
 	height: 550px;
-	bottom: -265%;
+	bottom: -285%;
 	left: 50%;
 	margin-left: -480px;
 
@@ -1864,4 +1889,9 @@ main{
 	z-index: 2;
 	background-color: rgba(255 ,255 ,255, 1);
 	box-shadow: 0 0 10px 1px rgba(212, 212, 212, 1);
+}
+
+.popup--show
+{
+	display: flex;
 }
