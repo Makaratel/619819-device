@@ -17,7 +17,7 @@
  					<button class="main-menu__button" type="submit">Найти</button>
  				</form>
  				<ul class="main-menu__list user-menu">
- 					<li class="user-menu__item user-menu__item--user"><a class="user-menu__link user-menu__link--user" href="#">Войти</a></li>
+ 					<li class="user-menu__item user-menu__item--login"><a class="user-menu__link user-menu__link--login" href="#">Войти</a></li>
  					<li class="user-menu__item user-menu__item--compare"><a class="user-menu__link user-menu__link--compare" href="#">Сравнить</a></li>
  					<li class="user-menu__item"><a class="user-menu__link user-menu__link--cart" href="#">Корзина</a></li>
  				</ul>
@@ -62,12 +62,12 @@
  							<p class="description-detail__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
  							<a class="btn description-detail__link" href="#">Подробнее</a>
  							<dl class="description-detail__definition definition-list">
- 								<dt class="definition-list__term">Материал</dt>
- 								<dd class="definition-list__determination">Карбон</dd>
  								<dt class="definition-list__term">Длина палки</dt>
  								<dd class="definition-list__determination">8,5 м</dd>
  								<dt class="definition-list__term">Вес палки</dt>
  								<dd class="definition-list__determination">5 кг</dd>
+ 								<dt class="definition-list__term">Материал</dt>
+ 								<dd class="definition-list__determination">Карбон</dd>
  							</dl>
  						</div>
  					</div>
@@ -188,13 +188,13 @@
 
  				<ul class="features__list controls-features">
  					<li class="controls-features__item">
- 						<label class="controls-features__label controls-features__label--slider-1" for="delivery">Доставка</label>
+ 						<label class="btn controls-features__label controls-features__label--slider-1" for="delivery">Доставка</label>
  					</li>
  					<li class="controls-features__item">
- 						<label class="controls-features__label  controls-features__label--slider-2" for="garanty">Гарантия</label>
+ 						<label class="btn controls-features__label  controls-features__label--slider-2" for="garanty">Гарантия</label>
  					</li>
  					<li class="controls-features__item">
- 						<label class="controls-features__label  controls-features__label--slider-3" for="credit">Кредит</label>
+ 						<label class="btn controls-features__label  controls-features__label--slider-3" for="credit">Кредит</label>
  					</li>
  				</ul>
  			</div>
@@ -218,14 +218,14 @@
  			</ul>
  		</section>
 
- 		<div class="main-wrapper container">
+ 		<div class="main-wrapper">
  			<section class="description">
  				<h2 class="description__title">О нас</h2>
  				<p class="description__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
  				<p class="description__text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
  				<ul class="description__list description-delivery">
  					<li class="description-delivery__item">Деловые Линии</li>
- 					<li class="description-delivery__item">Автострейдинг</li>
+ 					<li class="description-delivery__item">Автотрейдинг</li>
  					<li class="description-delivery__item">ЖелДорЭкспедиция</li>
  				</ul>
  				<a class="btn description__btn" href="#">Подробнее о нас</a>
@@ -234,7 +234,7 @@
  			<section class="contacts">
  				<h2 class="contacts__title">Контакты</h2>
  				<p class="contacts__text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
- 				<a class="contacts__link" href="#"><img class="contacts__map" src="img/map.jpg" width="560" height="220" alt="Наш офи находится по адресу улица Строителей 15"></a>
+ 				<a class="contacts__link" href="#"><img class="contacts__map" src="img/map.jpg" width="560" height="220" alt="Наш офис находится по адресу улица Строителей 15"></a>
  				<a class="btn contacts__btn" href="#">Напишите нам</a>
  			</section>
  		</div>
@@ -245,7 +245,7 @@
  			<div class="footer__section">
  				<a class="footer__logo logo">DEVICE</a>
  				<ul class="footer__section-list user-menu">
- 					<li class="user-menu__item"><a class="user-menu__link user-menu__link--user" href="#">Войти</a></li>
+ 					<li class="user-menu__item"><a class="user-menu__link user-menu__link--login" href="#">Войти</a></li>
  					<li class="user-menu__item"><a class="user-menu__link user-menu__link--compare" href="#">Сравнить</a></li>
  					<li class="user-menu__item"><a class="user-menu__link user-menu__link--cart" href="#">Корзина</a></li>
  				</ul>
@@ -297,7 +297,7 @@
  	</section>
 
  	<section class="popup-map">
- 		<h2 class="visually-hidden">Как до нас добраться</h2>
+ 		<h2 class="visually-hidden">Как до нас добраться - наш офис находится по адресу улица Строителей 15</h2>
  		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2b575a55b294f5a86c632e22b129513465d77fa45628c45a25bcf5694e5a6ed7&amp;width=100%25&amp;height=559&amp;lang=ru_RU&amp;scroll=true"></script>
  		<button class="popup-map__button" type="button" aria-label="Закрыть"></button>
  	</section>
