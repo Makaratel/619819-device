@@ -963,8 +963,6 @@ main{
 	position: relative;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
-	
-	outline: 2px solid red
 }
 
 .description{
@@ -2008,6 +2006,7 @@ main{
 	font-size: 1px;
 	margin: -1px;
 	color: rgba(70, 70, 70, 1);
+	outline: none;
 }
 
 .social__link::before{
@@ -2023,6 +2022,10 @@ main{
 .social__link:hover::before{
 	-webkit-filter: opacity(0.6);
 			filter: opacity(0.6);
+}
+
+.social__link:focus::before{
+	outline: 2px solid rgba(55, 150, 247, 1);
 }
 
 .social__link:active::before{
@@ -2260,6 +2263,11 @@ main{
 
 .popup-letter__input:focus:-ms-input-placeholder{
 	color: rgba(0, 0, 0, 1);
+}
+
+.popup-letter__submit{
+	padding: 0 50px;
+	background-color: transparent;
 }
 
 .popup-map{
