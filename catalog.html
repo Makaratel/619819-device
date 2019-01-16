@@ -14,7 +14,7 @@
  			<div class="main-menu__container">
  				<form class="main-menu__form" action="/echo" method="post">
  					<input class="main-menu__search" type="search" name="search" placeholder="Поиск по сайту" autocomplete="off">
- 					<button class="main-menu__button" type="submit">Найти</button>
+ 					<button class="main-menu__button" type="submit" tabindex="0">Найти</button>
  				</form>
  				<ul class="main-menu__list user-menu">
  					<li class="user-menu__item"><a class="user-menu__link user-menu__link--login" href="#">Валентин Петухов</a></li>
@@ -66,8 +66,8 @@
 	 							<div class="filter-price__control price-control">
 	 								<div class="price-control__scale">
 	 									<div class="price-control__bar"></div>
-	 									<div class="price-control__toogle price-control__toogle--min"></div>
-	 									<div class="price-control__toogle price-control__toogle--max"></div>
+	 									<div class="price-control__toogle price-control__toogle--min" tabindex="0"></div>
+	 									<div class="price-control__toogle price-control__toogle--max" tabindex="0"></div>
 	 									<label class="price-control__label price-control__label--min">
 	 									от <input class="price-control__input" type="text" name="min-price" value="0">
 	 									</label>
@@ -83,23 +83,23 @@
 	 						<ul class="filter-color__list">
 	 							<li class="filter-color__item">
 	 								<input class="filter-color__input" type="checkbox" name="black" id="black" checked>
-	 								<label class="filter-color__label" for="black">Черный</label>
+	 								<label class="filter-color__label" for="black" tabindex="0">Черный</label>
 	 							</li>
 	 							<li class="filter-color__item">
 	 								<input class="filter-color__input" type="checkbox" name="white" id="white">
-	 								<label class="filter-color__label" for="white">Белый</label>
+	 								<label class="filter-color__label" for="white" tabindex="0">Белый</label>
 	 							</li>
 	 							<li class="filter-color__item">
 	 								<input class="filter-color__input" type="checkbox" name="blue" id="blue" checked>
-	 								<label class="filter-color__label" for="blue">Синий</label>
+	 								<label class="filter-color__label" for="blue" tabindex="0">Синий</label>
 	 							</li>
 	 							<li class="filter-color__item">
 	 								<input class="filter-color__input" type="checkbox" name="red" id="red" checked>
-	 								<label class="filter-color__label" for="red">Красный</label>
+	 								<label class="filter-color__label" for="red" tabindex="0">Красный</label>
 	 							</li>
 	 							<li class="filter-color__item">
 	 								<input class="filter-color__input" type="checkbox" name="pink" id="pink">
-	 								<label class="filter-color__label" for="pink">Розовый</label>
+	 								<label class="filter-color__label" for="pink" tabindex="0">Розовый</label>
 	 							</li>
 	 						</ul>
 	 					</fieldset>
@@ -108,11 +108,11 @@
 	 						<ul class="filter-bluetooth__list">
 	 							<li class="filter-bluetooth__item">
 	 								<input class="filter-bluetooth__input" type="radio" name="bluetooth" id="bluetooth-yes" checked>
-	 								<label class="filter-bluetooth__label" for="bluetooth-yes">Есть</label>
+	 								<label class="filter-bluetooth__label" for="bluetooth-yes" tabindex="0">Есть</label>
 	 							</li>
 	 							<li class="filter-bluetooth__item">
 	 								<input class="filter-bluetooth__input" type="radio" name="bluetooth" id="bluetooth-no">
-	 								<label class="filter-bluetooth__label" for="bluetooth-no">Нет</label>
+	 								<label class="filter-bluetooth__label" for="bluetooth-no" tabindex="0">Нет</label>
 	 							</li>
 	 						</ul>
 	 					</fieldset>
