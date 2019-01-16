@@ -392,6 +392,7 @@ main{
 	width: 1100px;
 	height: 140px;
 	z-index: 2;
+	overflow: auto;
 
 	display: none;
 	-webkit-box-orient: vertical;
@@ -427,7 +428,7 @@ main{
 }
 
 .catalog-menu__item:nth-last-child(2){
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 }
 
 .extra-menu{
@@ -846,7 +847,7 @@ main{
 			flex-direction: row-reverse;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
-			justify-content: center;
+			justify-content: space-between;
 }
 
 .features__slider-input{
@@ -863,7 +864,7 @@ main{
 }
 
 .advantages{
-	margin-left: 25px;
+	margin-right: 270px;
 }
 
 .advantages::before{
@@ -937,11 +938,10 @@ main{
 }
 
 .controls-features{
-	position: absolute;
 	margin: 0;
 	padding: 0;
-	left: 0;
-	top: 65px;
+	margin-top: 65px;
+	margin-left: -60px;
 }
 
 .controls-features__item{
